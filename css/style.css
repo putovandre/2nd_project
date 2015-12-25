@@ -1,18 +1,41 @@
 .logo {
   cursor: default;
-  padding: 10px 0;
+  padding: 0;
   text-align: left;
   letter-spacing: -3px;
   text-transform: uppercase;
   color: #ff6400;
   font-family: 'proxima';
-  font-size: 39px;
+  font-size: 44px;
 }
 .l-search {
-  padding: 10px 5px;
+  padding: 10px 0;
+}
+.user-box .user-box_name {
+  cursor: pointer;
+  padding-top: 30px;
+  vertical-align: middle;
+  font-family: 'proxima';
+  font-size: 14px;
+  color: #666666;
+}
+.user-box .user-box_name:hover {
+  color: #999999;
+  text-decoration: underline;
+}
+.user-box .user-box_more {
+  padding: 30px 10px 0 10px;
+  color: #666666;
+  font-size: 14px;
+}
+.user-box .user-box_more:hover {
+  color: #999999;
 }
 .u-pull-left {
   float: left;
+}
+.u-pull-right {
+  float: right;
 }
 .container {
   width: 1024px;
@@ -21,42 +44,44 @@
 .u-inline-block {
   position: relative;
   display: inline-block;
+  vertical-align: top;
+  padding-top: 15px;
 }
 .col-1 {
-  width: 85.33333333px;
+  width: 8.333%;
 }
 .col-2 {
-  width: 170.66666667px;
+  width: 16.666%;
 }
 .col-3 {
-  width: 256px;
+  width: 25%;
 }
 .col-4 {
-  width: 341.33333333px;
+  width: 33.333%;
 }
 .col-5 {
-  width: 426.66666667px;
+  width: 41.666%;
 }
 .col-6 {
-  width: 512px;
+  width: 50%;
 }
 .col-7 {
-  width: 597.33333333px;
+  width: 58.333%;
 }
 .col-8 {
-  width: 682.66666667px;
+  width: 66.666%;
 }
 .col-9 {
-  width: 768px;
+  width: 75%;
 }
 .col-10 {
-  width: 853.33333333px;
+  width: 83.333%;
 }
 .col-11 {
-  width: 938.66666667px;
+  width: 91.666%;
 }
 .col-12 {
-  width: 1024px;
+  width: 100%;
 }
 .u-clearfix:after {
   content: " ";
@@ -89,7 +114,6 @@ ul {
   list-style-type: none;
 }
 .search {
-  padding: 0;
   border: 1px solid #cccccc;
   background-color: #ffffff;
 }
@@ -143,14 +167,15 @@ ul {
 .search_menu .search_menu_tab:after {
   content: ' |';
 }
-.search_menu li {
+.search_menu .fake-link {
+  font-family: 'proxima';
   cursor: pointer;
   font-size: 12px;
   display: inline-block;
-  color: #999999;
+  color: #666666;
   text-transform: uppercase;
 }
-.search_menu li:hover {
+.search_menu .fake-link:hover {
   text-decoration: underline;
 }
 

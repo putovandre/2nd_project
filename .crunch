@@ -1,0 +1,27 @@
+{
+	"files": {
+		"less/style.less": {
+			"engines": [
+				{
+					"compiler": "less",
+					"output": "../css/style.css",
+					"options": {
+						"compress": false,
+						"ieCompat": false,
+						"strictMath": false,
+						"strictUnits": false,
+						"javascriptEnabled": false,
+						"sourcemap": true
+					}
+				}
+			],
+			"sources": [
+				"base/typo.less",
+				"blocks/layout.less",
+				"blocks/search.less",
+				"blocks/utils.less",
+				"variables.less"
+			]
+		}
+	}
+}

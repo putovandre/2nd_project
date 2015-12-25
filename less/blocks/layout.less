@@ -3,7 +3,7 @@
 
 	.logo{
 		cursor: default;
-		padding: @padding-base-vertical*2 0;
+		padding: 0;
 		text-align: left;
 		letter-spacing: -3px;
 		text-transform: uppercase;
@@ -15,7 +15,31 @@
 
 
 .l-search{
-	padding: @padding-base-vertical*2 @padding-base-horizontal;
+	padding: @padding-base-vertical*2 0;
 }
 
 
+
+
+.user-box{
+	.user-box_name{
+	cursor: pointer;
+	padding-top: 30px;
+	vertical-align: middle;
+	font-family:'proxima';
+	font-size: 14px;
+	color:@gray-darkest;
+	&:hover{
+			color:@gray-dark;
+			text-decoration: underline;
+		}
+	}
+	.user-box_more{
+		padding: 30px 10px 0 10px;
+		color:@gray-darkest;
+		font-size: 14px;
+		&:hover{
+			color:@gray-dark;
+		}
+	}
+}

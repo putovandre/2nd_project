@@ -4,6 +4,7 @@
 
 //color
 @black:              #000;
+@gray-darkest:       lighten(@black, 40%);  
 @gray-dark:          lighten(@black, 60%);   
 @gray:               lighten(@black, 80%); 
 @gray-light:         lighten(@black, 94%); 
@@ -15,7 +16,7 @@
 
 @search_btn-color: 			@blue-color;
 @search_btn-color-hover:  	darken(@blue-color, 10%);
-@search_menu-color:  		@gray-dark;
+@search_menu-color:  		@gray-darkest;
 
 
 //typography 
@@ -24,7 +25,7 @@
 @font-size-large:         ceil((@font-size-base * 1.25)); //17.5
 @font-size-small:         ceil((@font-size-base * 0.85)); //11.9
 
-@font-size-h1:            floor(((@font-size-base) * 2.8));
+@font-size-h1:            floor(((@font-size-base) * 3.2));
 @font-size-h2:            floor((@font-size-base * 2.15)); 
 @font-size-h3:            ceil((@font-size-base * 1.7)); 
 @font-size-h4:            ceil((@font-size-base * 1.25)); 
