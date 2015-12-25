@@ -1,0 +1,66 @@
+//variables
+
+
+
+//color
+@black:              #000;
+@gray-dark:          lighten(@black, 60%);   
+@gray:               lighten(@black, 80%); 
+@gray-light:         lighten(@black, 94%); 
+@white: 			 #fff; 
+
+@base-color:  		#ff6400;
+@blue-color:  		#0096af;
+
+
+@search_btn-color: 			@blue-color;
+@search_btn-color-hover:  	darken(@blue-color, 10%);
+@search_menu-color:  		@gray-dark;
+
+
+//typography 
+
+@font-size-base:          14px;
+@font-size-large:         ceil((@font-size-base * 1.25)); //17.5
+@font-size-small:         ceil((@font-size-base * 0.85)); //11.9
+
+@font-size-h1:            floor(((@font-size-base) * 2.8));
+@font-size-h2:            floor((@font-size-base * 2.15)); 
+@font-size-h3:            ceil((@font-size-base * 1.7)); 
+@font-size-h4:            ceil((@font-size-base * 1.25)); 
+@font-size-h5:            @font-size-base;
+@font-size-h6:            ceil((@font-size-base * 0.85)); 
+
+@font-family-sans-serif:  sans-serif;
+@font-family-serif:       serif;
+@logo-font-family:  	  @font-family-sans-serif;
+
+
+//paddings
+@padding-base-vertical:  		5px;
+@padding-base-horizontal:  		5px;
+
+
+
+
+//==styles
+
+//links 
+@link-color:  			@blue-color;
+@link-hover-color:  	darke(@blue-color,30%);
+
+//logo
+@logo-font-color:  		@base-color;
+@logo-font-family:  	'proxima';
+@logo-font-size:  		@font-size-h1;
+
+//search
+@search-height:  		20px;
+@search_btn-size:  		@search-height*.7;
+@search_input-font-size:  12px;
+@search_input-margin:  	(@search-height - @search_input-font-size)/2;
+@search_btn-margin-top:  @search-height/2 - @search_input-font-size/4;
+
+//container width
+@container-width:  		1024px;
+@col-1-width:  			@container-width/12;
