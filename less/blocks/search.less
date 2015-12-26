@@ -3,20 +3,26 @@
 .search{
 	border: 1px solid @gray;
 	background-color: @white;
+    //toDO: не вижу курсор pointer при наводе на кнопки
 	.search_btn{
 		color:@search_btn-color;
+        //toDO: два раза font-size
 		font-size: @search_input-font-size;
+        //toDO: может для 10 px сделать @padding-large-horizontal?
 		margin:@search_btn-margin-top 10px 0 10px;
 		font-size: @search_btn-size;
 		position: relative;
+        //toDO: float ниже автоматом превращает в block и писать display: block не нужно
 		display: block;
+        //toDO: зачем ему z-index?
 		z-index: 1;
 		float:right;
 		&:hover{
-		color:@search_btn-color-hover;
+		    color:@search_btn-color-hover;
 		}
 	}
-		.search_btn_more{
+    //toDO: аналогично тому что выше
+	.search_btn_more{
 		color:@search_btn-color;
 		font-size: 14px;
 		margin:@search_btn-margin-top 10px 0 10px;
@@ -25,51 +31,51 @@
 		z-index: 1;
 		float:right;
 		&:hover{
-		color:@search_btn-color-hover;
+		    color:@search_btn-color-hover;
 		}
-
 	}
 
 	.search_input{
+        //toDO: свойства font в одну строчку
 		font-weight: 100;
 		font-style: italic;
 		font-size: @search_input-font-size;
 		color: @blue-color;
-	vertical-align: middle;
-	height: @search-height;
-	margin: @search_input-margin;
-	z-index: 2;
-	width: 80%;
-	display: block;
-	border: none;
-	&:focus{
-	outline:none;
-	}
-	&::-webkit-input-placeholder {
-   color: @blue-color;
-}
-
-
-}
+        vertical-align: middle;
+        height: @search-height;
+        margin: @search_input-margin;
+        z-index: 2;
+        //toDO: вот эту хрень уже объяснял - неиспользуемое место кому оставил? надо кнопкам дать float:right
+        // а у этого уже display:block и он старается занять максимальную ширину - достаточно дать маржин справа
+        width: 80%;
+        display: block;
+        border: none;
+        &:focus{
+            outline:none;
+        }
+	    &::-webkit-input-placeholder {
+            color: @blue-color;
+        }
+    }
 }
 
 
 .search_menu{
 	padding: 3px 0 0 5px;
+    //toDO: тут подразумевается что палочка между всеми пунктами меню - т.е. даешь палочку всем, а у first-child убиваешь
+    // смотри чтобы пробел у тебя не подчеркивался при ховере
 	.search_menu_tab:after{
-	content: ' |';}
+	    content: ' |';
+    }
 	.fake-link{
-	font-family:'proxima';
-	cursor: pointer;
-	font-size: 12px;
-	display: inline-block;
-	color:@search_menu-color;
-	text-transform: uppercase;
-	&:hover{
-		text-decoration: underline;
+        font-family:'proxima';
+        cursor: pointer;
+        font-size: 12px;
+        display: inline-block;
+        color:@search_menu-color;
+        text-transform: uppercase;
+        &:hover{
+            text-decoration: underline;
+        }
 	}
-	
-	}
-	
-
 }
