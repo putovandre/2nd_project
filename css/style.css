@@ -1,3 +1,30 @@
+@font-face {
+  font-family: proxima;
+  src: url('../fonts/proxima.ttf');
+}
+a {
+  color: #0096af;
+  font-size: 14px;
+  font-family: sans-serif;
+}
+a:hover {
+  cursor: pointer;
+  color: darke(#0096af, 30%);
+}
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+li,
+table {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style-type: none;
+}
 .logo {
   cursor: default;
   padding: 0;
@@ -10,6 +37,10 @@
 }
 .l-search {
   padding: 10px 0;
+}
+.row {
+  display: block;
+  height: 100px;
 }
 .user-box .user-box_name {
   cursor: pointer;
@@ -90,32 +121,9 @@
   height: 0;
   clear: both;
 }
-a {
-  color: #0096af;
-  font-size: 14px;
-  font-family: sans-serif;
-}
-a:hover {
-  cursor: pointer;
-  color: darke(#0096af, 30%);
-}
-h1,
-h2,
-h3,
-h4,
-p,
-ul,
-li,
-table {
-  margin: 0;
-  padding: 0;
-}
-ul {
-  list-style-type: none;
-}
 .search {
   border: 1px solid #cccccc;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 .search .search_btn {
   color: #0096af;
@@ -178,5 +186,3 @@ ul {
 .search_menu .fake-link:hover {
   text-decoration: underline;
 }
-
-/*# sourceMappingURL=style.css.map */
