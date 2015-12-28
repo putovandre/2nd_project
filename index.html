@@ -12,6 +12,8 @@
 
 <body>
 	<div class='container'>
+        <!--toDO: что мешает этот класс u-padding-top дать один раз контейнеру? -->
+        <!--toDO: все колонки всегда в .row у которого прописан clearfix (в стилях), класс u-pull-left убираем-float даем в стили колонок -->
         <div class='col-2 u-pull-left u-padding-top'>
 			<h1 class='logo'>SOON</h1>
 		</div>
@@ -21,9 +23,11 @@
 				<div class='search search_spaced'>
 					<i class='fa fa-search search_btn fa-flip-horizontal'></i>
 					<i class="fa fa-caret-down search_btn_more"></i>
+                    <!--toDO: как писал в вк обернем инпут дивом с маржином а интупу 100% ширину -->
 					<input type="text" class='search_input' placeholder='search everything...'>
 				</div>
 				<ul class='search_menu'>
+                    <!--toDO: как писал в вк - внутри li добавим a так как брэдкрамб это ссылки на страницы (по семантике) -->
                     <li class='search_menu_item'>org chat</li>
 					<li class='search_menu_item'>advanced search<li>
 				</ul>
