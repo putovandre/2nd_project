@@ -3,32 +3,21 @@
 .search{
 	border: 1px solid @gray;
 	background-color: @white;
-    //toDO: не вижу курсор pointer при наводе на кнопки
 	.search_btn{
+		cursor:pointer;
 		color:@search_btn-color;
-        //toDO: два раза font-size
-		font-size: @search_input-font-size;
-        //toDO: может для 10 px сделать @padding-large-horizontal?
-		margin:@search_btn-margin-top 10px 0 10px;
+		margin:@search_btn-margin-top @padding-large-horizontal;
 		font-size: @search_btn-size;
-		position: relative;
-        //toDO: float ниже автоматом превращает в block и писать display: block не нужно
-		display: block;
-        //toDO: зачем ему z-index?
-		z-index: 1;
 		float:right;
 		&:hover{
 		    color:@search_btn-color-hover;
 		}
 	}
-    //toDO: аналогично тому что выше
 	.search_btn_more{
+		cursor:pointer;
 		color:@search_btn-color;
 		font-size: 14px;
-		margin:@search_btn-margin-top 10px 0 10px;
-		position: relative;
-		display: block;
-		z-index: 1;
+		margin:@search_btn-margin-top @padding-large-horizontal;
 		float:right;
 		&:hover{
 		    color:@search_btn-color-hover;
@@ -36,18 +25,13 @@
 	}
 
 	.search_input{
-        //toDO: свойства font в одну строчку
-		font-weight: 100;
-		font-style: italic;
-		font-size: @search_input-font-size;
+		font: 100 italic @search_input-font-size sans-serif;
 		color: @blue-color;
         vertical-align: middle;
         height: @search-height;
         margin: @search_input-margin;
-        z-index: 2;
         //toDO: вот эту хрень уже объяснял - неиспользуемое место кому оставил? надо кнопкам дать float:right
         // а у этого уже display:block и он старается занять максимальную ширину - достаточно дать маржин справа
-        width: 80%;
         display: block;
         border: none;
         &:focus{
@@ -61,13 +45,7 @@
 
 
 .search_menu{
-	padding: 3px 0 0 5px;
-    //toDO: тут подразумевается что палочка между всеми пунктами меню - т.е. даешь палочку всем, а у first-child убиваешь
-    // смотри чтобы пробел у тебя не подчеркивался при ховере
-	.search_menu_tab:after{
-	    content: ' |';
-    }
-	.fake-link{
+    .search_menu_item{
         font-family:'proxima';
         cursor: pointer;
         font-size: 12px;
@@ -77,5 +55,13 @@
         &:hover{
             text-decoration: underline;
         }
+		&:before{
+			content: '|';
+            padding-right: @padding-base-horizontal;
+          text-decoration-skip: objects;
+		}
+		&:first-child:before{
+			content: '';
+		}
 	}
 }

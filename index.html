@@ -12,44 +12,30 @@
 
 <body>
 	<div class='container'>
-        <!--toDO: вот тут я вообще теряюсь col-2 u-inline-block u-pull-left u-clearfix - что ты хотел сказать?
-        зачем если это блок колонки ему делать display:inline-block и clearfix ? аналогично ниже-->
-		<div class='col-2 u-inline-block u-pull-left u-clearfix'>
-            <!--toDO: .l-logo избыточно? зачем оно? класс лэйаута заводится если есть осбые свойства не описываемые стандартными свойствами грида например-->
-			<div class='l-logo'>
+        <div class='col-2 u-pull-left u-padding-top'>
 			<h1 class='logo'>SOON</h1>
-			</div>
 		</div>
 
-		<div class='col-7 u-inline-block u-pull-left u-clearfix'>
-            <!--toDO: тут можно разделить .l-search и .search но можно и не использовать l-search так как свойство отступа не слишком значительно
-            можно вместо него сделать class="search search__spaced" модификатор например-->
-			<div class='l-search'>
-				<div class='search'>
+		<div class='col-7 u-pull-left u-padding-top'>
+
+				<div class='search search_spaced'>
 					<i class='fa fa-search search_btn fa-flip-horizontal'></i>
 					<i class="fa fa-caret-down search_btn_more"></i>
 					<input type="text" class='search_input' placeholder='search everything...'>
 				</div>
 				<ul class='search_menu'>
-                    <!--toDO: search_menu_tab этот класс я не понял зачем?
-                    класс fake-link уместно применять в тексте, а в меню пусть будет класс search_menu_item а уже в стилях наследоватся
-                    внешний вид fake-link-->
-					<li class='fake-link search_menu_tab'>org chat</li>
-					<li class='fake-link'>advanced search<li>
+                    <li class='search_menu_item'>org chat</li>
+					<li class='search_menu_item'>advanced search<li>
 				</ul>
-			</div>
+
 		</div>
 
-		<div class='col-3  u-inline-block u-pull-left u-clearfix'>
+		<div class='col-3 u-pull-left u-padding-top'>
 			<div class='user-box'>
-                <!--toDO: это особый блок который не контент а именно блок с неизменной версткой, а давая класс картинке u-pull-right ты
-                как бы намекаешь что и u-pull-left у нее может быть. логика такая просматривается. поэтому либо дешь ей класс
-                user-box_pic что лучше, либо без класса напрямую свойства даешь... если понядобиться блок юзера с картинкой слева то
-                это скорее всего будет достигаться модификатором к самому блоку "user-box user-box_left" например-->
+                <!--toDO: это особый блок который не контент а именно блок с неизменной версткой, а давая класс картинке u-pull-right тыкак бы намекаешь что и u-pull-left у нее может быть. логика такая просматривается. поэтому либо дешь ей классuser-box_pic что лучше, либо без класса напрямую свойства даешь... если понядобиться блок юзера с картинкой слева тоэто скорее всего будет достигаться модификатором к самому блоку "user-box user-box_left" например-->
 				<img src="images/user_pic.jpg" alt="user_pic" class='u-pull-right'>
-                <!--toDO: по слову more непонятно что это, понятней например user-box_actions или user-box_menu по тому что я как понимаю
-                там выпадающий лист с действиями login  и т.д.-->
-				<i class="fa fa-caret-down user-box_more u-pull-right"></i>
+                <!--toDO: по слову more непонятно что это, понятней например user-box_actions или user-box_menu по тому что я как понимаютам выпадающий лист с действиями login  и т.д.-->
+				<i class="fa fa-caret-down user-box_menu u-pull-right"></i>
                 <!--toDO: u-pull-right аналогично тому что выше-->
 				<span class='user-box_name u-pull-right'>Paper Moon Man</span>
 			</div>

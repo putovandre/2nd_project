@@ -35,8 +35,8 @@ ul {
   font-family: 'proxima';
   font-size: 44px;
 }
-.l-search {
-  padding: 10px 0;
+.search_spaced {
+  margin: 10px 0 0 0;
 }
 .row {
   display: block;
@@ -68,6 +68,9 @@ ul {
 .u-pull-right {
   float: right;
 }
+.u-padding-top {
+  padding-top: 15px;
+}
 .container {
   width: 1024px;
   margin: 0 auto;
@@ -76,7 +79,6 @@ ul {
   position: relative;
   display: inline-block;
   vertical-align: top;
-  padding-top: 15px;
 }
 .col-1 {
   width: 8.333%;
@@ -126,40 +128,31 @@ ul {
   background-color: #fff;
 }
 .search .search_btn {
+  cursor: pointer;
   color: #0096af;
-  font-size: 12px;
-  margin: 7px 10px 0 10px;
+  margin: 7px 5px;
   font-size: 14px;
-  position: relative;
-  display: block;
-  z-index: 1;
   float: right;
 }
 .search .search_btn:hover {
   color: #006a7c;
 }
 .search .search_btn_more {
+  cursor: pointer;
   color: #0096af;
   font-size: 14px;
-  margin: 7px 10px 0 10px;
-  position: relative;
-  display: block;
-  z-index: 1;
+  margin: 7px 5px;
   float: right;
 }
 .search .search_btn_more:hover {
   color: #006a7c;
 }
 .search .search_input {
-  font-weight: 100;
-  font-style: italic;
-  font-size: 12px;
+  font: 100 italic 12px sans-serif;
   color: #0096af;
   vertical-align: middle;
   height: 20px;
   margin: 4px;
-  z-index: 2;
-  width: 80%;
   display: block;
   border: none;
 }
@@ -169,13 +162,7 @@ ul {
 .search .search_input::-webkit-input-placeholder {
   color: #0096af;
 }
-.search_menu {
-  padding: 3px 0 0 5px;
-}
-.search_menu .search_menu_tab:after {
-  content: ' |';
-}
-.search_menu .fake-link {
+.search_menu .search_menu_item {
   font-family: 'proxima';
   cursor: pointer;
   font-size: 12px;
@@ -183,6 +170,14 @@ ul {
   color: #666666;
   text-transform: uppercase;
 }
-.search_menu .fake-link:hover {
+.search_menu .search_menu_item:hover {
   text-decoration: underline;
+}
+.search_menu .search_menu_item:before {
+  content: '|';
+  padding-right: 5px;
+  text-decoration-skip: objects;
+}
+.search_menu .search_menu_item:first-child:before {
+  content: '';
 }
