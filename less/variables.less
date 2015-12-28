@@ -11,15 +11,10 @@
 @gray-light:         lighten(@black, 94%); 
 @white: 			 #fff; 
 
-//toDO: то что это "color" понятно и так - а это основные цвета для дизайна всего сайта,
-// можно назвать brand-orange и brand-blue
+
 @base-color:  		#ff6400;
 @blue-color:  		#0096af;
 
-//toDO: вначале общие переменные например typo а потом уже переменные для модулей
-@search_btn-color: 			@blue-color;
-@search_btn-color-hover:  	darken(@blue-color, 10%);
-@search_menu-color:  		@gray-darkest;
 
 
 //typography 
@@ -59,11 +54,21 @@
 @logo-font-size:  		@font-size-h1;
 
 //search
+@search_btn-color: 			@blue-color;
+@search_btn-color-hover:  	darken(@blue-color, 10%);
+@search_menu-color:  		@gray-darkest;
+
 @search-height:  		20px;
 @search_btn-size:  		@search-height*.7;
 @search_input-font-size:  12px;
 @search_input-margin:  	(@search-height - @search_input-font-size)/2;
 @search_btn-margin-top:  @search-height/2 - @search_input-font-size/4;
+
+@search_menu_item-font-size:      @font-size-base*.9;
+
+
+//user box
+@user-box_actions-margin: @padding-base-horizontal*18;
 
 //container width
 @container-width:  		1024px;

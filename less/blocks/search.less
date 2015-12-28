@@ -16,8 +16,7 @@
 	.search_btn_more{
 		cursor:pointer;
 		color:@search_btn-color;
-        //toDO: размер шрифтв задается переменной из размеров шрифтов, иначе в одном месте поправишь а в другом 14px останется
-		font-size: 14px;
+        font-size: @font-size-base;
 		margin:@search_btn-margin-top @padding-large-horizontal;
 		float:right;
 		&:hover{
@@ -31,8 +30,7 @@
         vertical-align: middle;
         height: @search-height;
         margin: @search_input-margin;
-        //toDO: вот эту хрень уже объяснял - неиспользуемое место кому оставил? надо кнопкам дать float:right
-        // а у этого уже display:block и он старается занять максимальную ширину - достаточно дать маржин справа
+      width: 100%;
         display: block;
         border: none;
         &:focus{
@@ -46,25 +44,30 @@
 
 
 .search_menu{
+
     .search_menu_item{
-        font-family:'proxima';
-        cursor: pointer;
-        //toDO: размер шрифтв задается переменной из размеров шрифтов
-        font-size: 12px;
-        display: inline-block;
-        color:@search_menu-color;
-        text-transform: uppercase;
-        &:hover{
+      font-family: 'proxima';
+      cursor: pointer;
+      font-size: @search_menu_item-font-size;
+      color: @search_menu-color;
+      text-transform: uppercase;
+      display: inline-block;
+      &:before{
+        content: '|';
+        padding-right: @padding-base-horizontal;
+      }
+      &:first-child:before{
+        content: '';
+      }
+        a {
+          font-family: 'proxima';
+          cursor: pointer;
+          font-size: @search_menu_item-font-size;
+          color: @search_menu-color;
+          text-transform: uppercase;
+          &:hover {
             text-decoration: underline;
+          }
         }
-		&:before{
-			content: '|';
-            padding-right: @padding-base-horizontal;
-            //toDO: не нужно будет
-            text-decoration-skip: objects;
-		}
-		&:first-child:before{
-			content: '';
-		}
 	}
 }

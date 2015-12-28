@@ -1,6 +1,17 @@
 //layout
 
 
+//container
+.container{
+	width: @container-width;
+	margin: 0 auto;
+}
+
+.row{
+	.clearfix();
+
+}
+
 	.logo{
 		cursor: default;
 		padding: 0;
@@ -18,34 +29,14 @@
 	margin: @padding-base-vertical*2 0 0 0;
 }
 
-//toDO: классу строки зачем высоту фиксировать? clearfix() ей надо сделать - который должен у тебя моявится в mixins папке
 .row{
-	display: block;
-	height: 100px;
+	.clearfix();
 }
 
 
 
-.user-box{
-    //toDO: я подозреваю что имя и стрелочка вниз работают вместе - и открывают меню снизу, сделай чтобы они совместно на ховер реагировали
-	.user-box_name{
-        cursor: pointer;
-        padding-top: 30px;
-        vertical-align: middle;
-        font-family:'proxima';
-        font-size: 14px;
-        color:@gray-darkest;
-	&:hover{
-			color:@gray-dark;
-			text-decoration: underline;
-		}
-	}
-	.user-box_more{
-		padding: 30px 10px 0 10px;
-		color:@gray-darkest;
-		font-size: 14px;
-		&:hover{
-			color:@gray-dark;
-		}
-	}
+
+
+.l-search_input{
+	padding-right: @padding-base-horizontal *10;
 }

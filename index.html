@@ -12,9 +12,8 @@
 
 <body>
 	<div class='container'>
-        <!--toDO: что мешает этот класс u-padding-top дать один раз контейнеру? -->
-        <!--toDO: все колонки всегда в .row у которого прописан clearfix (в стилях), класс u-pull-left убираем-float даем в стили колонок -->
-        <div class='col-2 u-pull-left u-padding-top'>
+        <div class="row">
+		<div class='col-2 u-padding-top'>
 			<h1 class='logo'>SOON</h1>
 		</div>
 
@@ -23,27 +22,24 @@
 				<div class='search search_spaced'>
 					<i class='fa fa-search search_btn fa-flip-horizontal'></i>
 					<i class="fa fa-caret-down search_btn_more"></i>
-                    <!--toDO: как писал в вк обернем инпут дивом с маржином а интупу 100% ширину -->
+					<div class="l-search_input">
 					<input type="text" class='search_input' placeholder='search everything...'>
+					</div>
 				</div>
 				<ul class='search_menu'>
-                    <!--toDO: как писал в вк - внутри li добавим a так как брэдкрамб это ссылки на страницы (по семантике) -->
-                    <li class='search_menu_item'>org chat</li>
-					<li class='search_menu_item'>advanced search<li>
+                    <li class='search_menu_item'><a href="#">org chat</a></li>
+					<li class='search_menu_item'><a href="#">advanced search</a><li>
 				</ul>
 
 		</div>
 
 		<div class='col-3 u-pull-left u-padding-top'>
 			<div class='user-box'>
-                <!--toDO: это особый блок который не контент а именно блок с неизменной версткой, а давая класс картинке u-pull-right тыкак бы намекаешь что и u-pull-left у нее может быть. логика такая просматривается. поэтому либо дешь ей классuser-box_pic что лучше, либо без класса напрямую свойства даешь... если понядобиться блок юзера с картинкой слева тоэто скорее всего будет достигаться модификатором к самому блоку "user-box user-box_left" например-->
-				<img src="images/user_pic.jpg" alt="user_pic" class='u-pull-right'>
-                <!--toDO: по слову more непонятно что это, понятней например user-box_actions или user-box_menu по тому что я как понимаютам выпадающий лист с действиями login  и т.д.-->
-				<i class="fa fa-caret-down user-box_menu u-pull-right"></i>
-                <!--toDO: u-pull-right аналогично тому что выше-->
-				<span class='user-box_name u-pull-right'>Paper Moon Man</span>
+				<span class='user-box_actions'>Paper Moon Man</span>
+                <img src="images/user_pic.jpg" alt="user_pic" class='user-box_pic'>
 			</div>
 		</div>
+			</div>
 	</div>
 
 
