@@ -1,0 +1,31 @@
+
+.user-box{
+  .user-box_actions{
+    margin-left: @user-box_actions-margin;
+    cursor: pointer;
+    padding-top: 30px;
+    vertical-align: middle;
+    font-family:'proxima';
+    font-size: 14px;
+    color:@gray-darkest;
+    &:after{
+      padding: 0 10px 0 0;
+      color:@gray-darkest;
+      font: @font-size-base FontAwesome;
+      content: ' \f0d7';
+    }
+    &:hover{
+      color:@gray-dark;
+      text-decoration: underline;
+      &:after{
+        color: @gray-dark;
+      }
+    }
+  }
+  .user-box_more{
+
+    &:hover{
+      color:@gray-dark;
+    }
+  }
+}
