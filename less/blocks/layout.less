@@ -7,21 +7,24 @@
 	margin: 0 auto;
 }
 
+// toDo: отсюда перенести в grid.less
 .row{
 	.clearfix();
 
 }
 
-	.logo{
-		cursor: default;
-		padding: 0;
-		text-align: left;
-		letter-spacing: -3px;
-		text-transform: uppercase;
-		color: @logo-font-color;
-		font-family: @logo-font-family;
-		font-size: @logo-font-size;
-	}
+.logo{
+	// toDo: лого часто всего делают ссылкой ведущей на главную страницу сайта - измени вертку <h1><a>
+	cursor: default;
+	padding: 0;
+	// toDo: это и так по умолчанию
+	text-align: left;
+	letter-spacing: -3px;
+	text-transform: uppercase;
+	color: @logo-font-color;
+	font-family: @logo-font-family;
+	font-size: @logo-font-size;
+}
 
 
 
@@ -29,6 +32,7 @@
 	margin: @padding-base-vertical*2 0 0 0;
 }
 
+// toDo: второй раз)
 .row{
 	.clearfix();
 }
