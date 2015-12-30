@@ -6,7 +6,7 @@
 
     //toDO: что мешает записать .search_btn, .search_btn_more {} свойства то один в один
     //toDO: даже если были бы разные немного то визуально понятней вначале общие перечислить а ниже дописать особые свойства конкретного элемента
-	.search_btn{
+	.search_btn, .search_btn_more{
 		cursor: pointer;
 		color:@search_btn-color;
 		margin:@search_btn-margin-top @padding-large-horizontal;
@@ -17,20 +17,11 @@
 		    color:@search_btn-color-hover;
 		}
 	}
-	.search_btn_more{
-		cursor: pointer;
-		color:@search_btn-color;
-        font-size: @font-size-base;
-		margin:@search_btn-margin-top @padding-large-horizontal;
-		float:right;
-		&:hover{
-		    color:@search_btn-color-hover;
-		}
-	}
+
 
 	.search_input{
 		font: 100 italic @search_input-font-size sans-serif;
-		color: @blue-color;
+		color: @brand-blue;
         vertical-align: middle;
         height: @search-height;
         margin: @search_input-margin;
@@ -41,7 +32,7 @@
             outline:none;
         }
 	    &::-webkit-input-placeholder {
-            color: @blue-color;
+            color: @brand-blue;
         }
     }
 }
@@ -49,15 +40,14 @@
 
 .search_menu{
 
-    .search_menu_item{
+    .search_menu_item, a {
         font-family: 'proxima';
-        //toDO: cursor не нужно - внутри ссылка
-        cursor: pointer;
         font-size: @search_menu_item-font-size;
         color: @search_menu-color;
-        //toDO: зачем если повторяешь то же в ссылке
         text-transform: uppercase;
         display: inline-block;
+    }
+    .search_menu_item {
         &:before{
             content: '|';
             padding-right: @padding-base-horizontal;
@@ -66,11 +56,7 @@
             content: '';
         }
         a {
-            font-family: 'proxima';
-            cursor: pointer;
-            font-size: @search_menu_item-font-size;
-            color: @search_menu-color;
-            text-transform: uppercase;
+
             &:hover {
                 text-decoration: underline;
             }

@@ -1,14 +1,11 @@
 .user-box {
+  float:right;
     .user-box_actions {
-        //toDO: а если имя будет длиннее что будет? маржин убери, .user-box{float:right;}
-        margin-left: @user-box_actions-margin;
         cursor: pointer;
-        //toDO: padding создает зону которая чувствительна к hover - используй margin
-        padding-top: 30px;
+        margin-top: 30px;
         vertical-align: middle;
         font-family: 'proxima';
-        //toDO: переменная размера шрифта вместо 14
-        font-size: 14px;
+        font-size: @user-box_actions-font-size;
         color: @gray-darkest;
         &:after {
             padding: 0 10px 0 0;

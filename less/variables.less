@@ -1,8 +1,8 @@
 //variables
 
 //fonts
-// toDo: кроссбраузерное подключение шрифтов. сами файлы делаются с помощью например http://www.fontsquirrel.com/tools/webfont-generator
-@font-face { font-family: proxima; src: url('../fonts/proxima.ttf'); }
+
+@font-face{font-family:'proxima';src:url('../fonts/proxima.eot');src:url('../fonts/proxima.eot') format('embedded-opentype'),url('../fonts/proxima.woff') format('woff'),url('../fonts/proxima.ttf') format('truetype'),url('../fonts/proxima.svg') format('svg');font-weight:normal;font-style:normal}
 
 //color
 @black:              #000;
@@ -12,17 +12,16 @@
 @gray-light:         lighten(@black, 94%); 
 @white: 			 #fff;
 
-// toDo: это брэнд цвета - основные цвета вокруг которых строится дизайн - назови @brand-...
-@base-color:  		#ff6400;
-@blue-color:  		#0096af;
+@brand-base:  		#ff6400;
+@brand-blue:  		#0096af;
 
 
 
 //typography 
 
 @font-size-base:          14px;
-@font-size-large:         ceil((@font-size-base * 1.25)); //17.5  // toDo: слово ceil означает округление вверх, тут 18px а коммент чтобы ты знал что в итоге у тебя шрифт 18 а не 17.5
-@font-size-small:         ceil((@font-size-base * 0.85)); //11.9
+@font-size-large:         ceil((@font-size-base * 1.25)); //18
+@font-size-small:         ceil((@font-size-base * 0.85)); //12
 
 @font-size-h1:            floor(((@font-size-base) * 3.2));
 @font-size-h2:            floor((@font-size-base * 2.15)); 
@@ -46,17 +45,17 @@
 //==styles
 
 //links 
-@link-color:  			@blue-color;
-@link-hover-color:  	darke(@blue-color,30%);
+@link-color:  			@brand-blue;
+@link-hover-color:  	darke(@brand-blue,30%);
 
 //logo
-@logo-font-color:  		@base-color;
+@logo-font-color:  		@brand-base;
 @logo-font-family:  	'proxima';
 @logo-font-size:  		@font-size-h1;
 
 //search
-@search_btn-color: 			@blue-color;
-@search_btn-color-hover:  	darken(@blue-color, 10%);
+@search_btn-color: 			@brand-blue;
+@search_btn-color-hover:  	darken(@brand-blue, 10%);
 @search_menu-color:  		@gray-darkest;
 
 @search-height:  		20px;
@@ -69,7 +68,7 @@
 
 
 //user box
-@user-box_actions-margin: @padding-base-horizontal*18;
+@user-box_actions-font-size:      @font-size-base;
 
 //container width
 @container-width:  		1024px;
