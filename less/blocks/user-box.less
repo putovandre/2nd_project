@@ -1,8 +1,10 @@
 .user-box {
-  float:right;
+    float:right;
+    //toDO: в случае длинной фамилии ломается верстка - а картинка должна оставать справа, подумай как лучше чтобы переносилось на след строку - но тогда иконку нужно делать версткой всегда справа по центру. Или ellipsis
     .user-box_actions {
         cursor: pointer;
         margin-top: 30px;
+        //toDO: что тебе дает vertical-align если ты выравниваешь маржином сверху?
         vertical-align: middle;
         font-family: 'proxima';
         font-size: @user-box_actions-font-size;
