@@ -7,23 +7,18 @@
 	margin: 0 auto;
 }
 
-//toDO: а если изменятся margin у h1 все поедет? поэтому класс лучше дать h1 , т.е. в стидях .logo{} .logo a {}
 .logo{
-	cursor: pointer;
-	text-align: left;
-	letter-spacing: -3px;
-	text-transform: uppercase;
-	color: @logo-font-color;
-	font-family: @logo-font-family;
-	font-size: @logo-font-size;
+    a {
+        cursor: pointer;
+        text-align: left;
+        letter-spacing: -3px;
+        text-transform: uppercase;
+        color: @logo-font-color;
+        font-family: @logo-font-family;
+        font-size: @logo-font-size;
+    }
 }
 
-
-//toDO: по BEM search_spaced означает что в модуле search у тебя элемент spaced, а утебя модификация модуля дающая отсупы - search__spaced двойное нижнее подчеркивание вместо одинарного
-//toDO: это модификация поиска - перенеси в соответсвующий файл
-.search_spaced{
-	margin: @padding-base-vertical*2 0 0 0;
-}
 
 
 

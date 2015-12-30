@@ -79,7 +79,7 @@ ul {
   /* Safari */
 }
 .row {
-  margin: 0 -10px;
+  margin: 0 10px;
   zoom: 1;
 }
 .row:before,
@@ -94,7 +94,7 @@ ul {
   width: 1024px;
   margin: 0 auto;
 }
-.logo {
+.logo a {
   cursor: pointer;
   text-align: left;
   letter-spacing: -3px;
@@ -102,9 +102,6 @@ ul {
   color: #ff6400;
   font-family: 'proxima';
   font-size: 44px;
-}
-.search_spaced {
-  margin: 10px 0 0 0;
 }
 .l-search_input {
   padding-right: 50px;
@@ -179,6 +176,9 @@ ul {
 }
 .search_menu .search_menu_item a:hover {
   text-decoration: underline;
+}
+.search__spaced {
+  margin: 10px 0 0 0;
 }
 .user-box {
   float: right;
