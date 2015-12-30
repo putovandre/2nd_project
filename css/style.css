@@ -77,6 +77,10 @@ ul {
   margin: 0 -10px;
   zoom: 1;
   box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  /*Firefox 1-3*/
+  -webkit-box-sizing: border-box;
+  /* Safari */
 }
 .row:before,
 .row:after {
