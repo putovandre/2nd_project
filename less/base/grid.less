@@ -18,10 +18,13 @@
   // toDo: между колонками обычно делают растояние - посмотри в bootstrap как сделано - отрицательный margin - у .row компенсирующий паддинги у колонок и
   // toDo: box-sizing: border-box назначь через mixin
   float: left;
+    padding:0 10px
+
 }
 
 
 .row{
-  .clearfix();
-
+    margin:0 -10px;
+    .clearfix();
+    .box-sizing();
 }

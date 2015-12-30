@@ -3,19 +3,19 @@
 .search{
 	border: 1px solid @gray;
 	background-color: @white;
-
-    //toDO: что мешает записать .search_btn, .search_btn_more {} свойства то один в один
-    //toDO: даже если были бы разные немного то визуально понятней вначале общие перечислить а ниже дописать особые свойства конкретного элемента
-	.search_btn, .search_btn_more{
+    .search_btn, .search_btn_more{
 		cursor: pointer;
 		color:@search_btn-color;
-		margin:@search_btn-margin-top @padding-large-horizontal;
+		margin:@search_btn-margin-top  @padding-large-horizontal;
 		font-size: @search_btn-size;
 		float:right;
         //toDO: всегда когда hover прописывам и focus (правда потом заставлю удалять когда будем постпроцессинг изучать, но пока для понимания добавь)
 		&:hover{
 		    color:@search_btn-color-hover;
 		}
+        &:focus{
+
+        }
 	}
 
 

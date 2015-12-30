@@ -71,9 +71,12 @@ ul {
 .col-11,
 .col-12 {
   float: left;
+  padding: 0 10px;
 }
 .row {
+  margin: 0 -10px;
   zoom: 1;
+  box-sizing: border-box;
 }
 .row:before,
 .row:after {
