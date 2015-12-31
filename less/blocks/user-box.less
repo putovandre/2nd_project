@@ -3,7 +3,8 @@
     img{
         float: right;
     }
-
+    //toDO: до сих пор пробел и стрелка тоже подчеркнуты на ховер
+    //toDO: не понимаю зачем на один логический элемент - имя два класса user-box_actions и user-box_name
     .user-box_actions {
         float: right;
         cursor: pointer;
@@ -12,6 +13,8 @@
         color: @gray-darkest;
         .user-box_name{
             display: inline-block;
+            //toDO: не нравится фиксацияя 100 ширины, если будет китаец Fu Li, то текст слева а встрелочка справа?
+            //toDO: почему имено 100 а не вся свободная ширина? хочу чтобы имя было в одну строку на всю свободную ширину до картинки
             width: 100px;
             white-space: nowrap;
             overflow: hidden;
@@ -23,9 +26,7 @@
             padding: 0 @padding-base-horizontal;
             color: @gray-darkest;
             font: @font-size-base FontAwesome;
-            content: '\f0d7';
-
-
+            content: '\f0d7'
         }
         &:hover {
             color: @gray-dark;
