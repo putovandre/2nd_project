@@ -1,2 +1,37 @@
 //menu
 
+
+
+.horizontal_menu{
+    ul{
+        display: inline-block;
+        margin-left: -10px;
+    }
+    white-space: nowrap;
+    .home-btn{
+
+        display: inline-block;
+        color:@brand-base;
+        font-size: @home-btn-size;
+        margin: 0 @padding-base-horizontal;
+
+    }
+    .menu_item{
+        letter-spacing: -1px;
+        display: inline-block;
+        text-transform: uppercase;
+        font:100  (@menu_item-font-size) 'proxima';
+        color:@gray-darkest;
+
+
+            &:before{
+                content: '|';
+                padding: 0 @padding-base-horizontal*2;
+            }
+            &:first-child:before{
+                content: '';
+            }
+
+
+    }
+}

@@ -115,6 +115,9 @@ ul {
 .u-padding-top {
   padding-top: 15px;
 }
+.u-padding-top2 {
+  padding-top: 30px;
+}
 .u-inline-block {
   position: relative;
   display: inline-block;
@@ -183,27 +186,61 @@ ul {
 .user-box {
   float: right;
 }
+.user-box img {
+  float: right;
+}
 .user-box .user-box_actions {
+  float: right;
   cursor: pointer;
-  margin-top: 30px;
-  vertical-align: middle;
-  font-family: 'proxima';
-  font-size: 14px;
+  margin: 20px 10px;
+  font: small-caps 14px 'proxima';
   color: #666666;
 }
+.user-box .user-box_actions .user-box_name {
+  display: inline-block;
+  width: 100px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: -5px;
+}
 .user-box .user-box_actions:after {
-  padding: 0 10px 0 0;
+  padding: 0 5px;
   color: #666666;
   font: 14px FontAwesome;
-  content: ' \f0d7';
+  content: '\f0d7';
 }
 .user-box .user-box_actions:hover {
   color: #999999;
-  text-decoration: underline;
+  border-bottom: 1px solid #999999;
 }
 .user-box .user-box_actions:hover:after {
   color: #999999;
 }
-.user-box .user-box_more:hover {
-  color: #999999;
+.horizontal_menu {
+  white-space: nowrap;
+}
+.horizontal_menu ul {
+  display: inline-block;
+  margin-left: -10px;
+}
+.horizontal_menu .home-btn {
+  display: inline-block;
+  color: #ff6400;
+  font-size: 25px;
+  margin: 0 5px;
+}
+.horizontal_menu .menu_item {
+  letter-spacing: -1px;
+  display: inline-block;
+  text-transform: uppercase;
+  font: 100 16px 'proxima';
+  color: #666666;
+}
+.horizontal_menu .menu_item:before {
+  content: '|';
+  padding: 0 10px;
+}
+.horizontal_menu .menu_item:first-child:before {
+  content: '';
 }

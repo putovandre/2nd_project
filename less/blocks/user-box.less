@@ -1,32 +1,38 @@
-//toDO: пробел перед стрелкой подчеркивается на ховер
 .user-box {
-    float:right;
-    //toDO: в случае длинной фамилии ломается верстка - а картинка должна оставать справа, подумай как лучше чтобы переносилось на след строку - но тогда иконку нужно делать версткой всегда справа по центру. Или ellipsis
+    float: right;
+    img{
+        float: right;
+    }
+
     .user-box_actions {
+        float: right;
         cursor: pointer;
-        margin-top: 30px;
-        //toDO: что тебе дает vertical-align если ты выравниваешь маржином сверху?
-        vertical-align: middle;
-        font-family: 'proxima';
-        font-size: @user-box_actions-font-size;
+        margin: 20px 10px;
+        font:small-caps @user-box_actions-font-size 'proxima';
         color: @gray-darkest;
+        .user-box_name{
+            display: inline-block;
+            width: 100px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin-bottom: -@padding-base-horizontal;
+
+        }
         &:after {
-            padding: 0 10px 0 0;
+            padding: 0 @padding-base-horizontal;
             color: @gray-darkest;
             font: @font-size-base FontAwesome;
-            content: ' \f0d7';
+            content: '\f0d7';
+
+
         }
         &:hover {
             color: @gray-dark;
-            text-decoration: underline;
+            border-bottom: 1px solid @gray-dark;
             &:after {
                 color: @gray-dark;
             }
-        }
-    }
-    .user-box_more {
-        &:hover {
-            color: @gray-dark;
         }
     }
 }
