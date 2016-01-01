@@ -8,6 +8,12 @@
 a {
   text-decoration: none;
 }
+a:hover {
+  color: #ff6400;
+}
+a:focus {
+  color: #ff6400;
+}
 h1,
 h2,
 h3,
@@ -79,7 +85,7 @@ ul {
   /* Safari */
 }
 .row {
-  margin: 0 10px;
+  margin: 0 -10px;
   zoom: 1;
 }
 .row:before,
@@ -101,7 +107,7 @@ ul {
   text-transform: uppercase;
   color: #ff6400;
   font-family: 'proxima';
-  font-size: 44px;
+  font-size: 47px;
 }
 .l-search_input {
   padding-right: 50px;
@@ -138,7 +144,7 @@ ul {
 .search .search_btn_more {
   cursor: pointer;
   color: #0096af;
-  margin: 7px 5px;
+  margin: 7px 20px;
   font-size: 14px;
   float: right;
 }
@@ -193,12 +199,12 @@ ul {
   float: right;
   cursor: pointer;
   margin: 20px 10px;
-  font: small-caps 14px 'proxima';
+  font: small-caps 14px sans-serif;
   color: #666666;
 }
 .user-box .user-box_actions .user-box_name {
   display: inline-block;
-  width: 100px;
+  width: 100%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -217,30 +223,65 @@ ul {
 .user-box .user-box_actions:hover:after {
   color: #999999;
 }
-.horizontal_menu {
-  white-space: nowrap;
-}
-.horizontal_menu ul {
-  display: inline-block;
-  margin-left: -10px;
-}
-.horizontal_menu .home-btn {
+.l-home-btn {
   display: inline-block;
   color: #ff6400;
   font-size: 25px;
   margin: 0 5px;
+  float: left;
 }
-.horizontal_menu .menu_item {
+.l-home-btn:hover,
+.l-home-btn:focus {
+  color: #666666;
+}
+.menu {
+  margin-top: 8.33333333px;
+  float: left;
+}
+.menu ul {
+  display: inline-block;
+  margin-left: -10px;
+}
+.menu .menu_item,
+.menu a {
   letter-spacing: -1px;
   display: inline-block;
   text-transform: uppercase;
   font: 100 16px 'proxima';
   color: #666666;
 }
-.horizontal_menu .menu_item:before {
+.menu a {
+  text-decoration: none;
+}
+.menu a:hover,
+.menu a:focus {
+  color: #ff6400;
+}
+.menu .menu_item:before {
   content: '|';
   padding: 0 10px;
 }
-.horizontal_menu .menu_item:first-child:before {
+.menu .menu_item:first-child:before {
   content: '';
+}
+.today-panel {
+  background-color: #ff6400;
+  padding: 5px 20px;
+}
+.today-panel .today-panel_name {
+  color: #fff;
+  font: 20px 'proxima';
+}
+#wxWrap {
+  float: right;
+}
+#wxTemp,
+#wxIntro {
+  display: inline-block;
+  font: (14px)*1.2 sans-serif;
+  color: #fff;
+  margin-top: 5px;
+}
+#wxIntro {
+  font-weight: 100;
 }

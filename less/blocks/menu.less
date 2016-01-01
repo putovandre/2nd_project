@@ -1,37 +1,49 @@
 //menu
 
+.l-home-btn{
 
-// toDO: еошибка BEM. если у тебя модуль menu то модификатор menu__horizontal . если же ты решил назвать модуль horizontal-menu то элемент внутри horizontal-menu_item
-.horizontal_menu{
+    display: inline-block;
+    color:@brand-base;
+    font-size: @home-btn-size;
+    margin: 0 @padding-base-horizontal;
+    float: left;
+    &:hover,&:focus{
+        color:@l-home-btn-color;
+    }
+}
+.menu{
+    margin-top:@menu-margin-top;
+    float: left;
     ul{
         display: inline-block;
         margin-left: -10px;
     }
-    white-space: nowrap;
-    .home-btn{
 
-        display: inline-block;
-        color:@brand-base;
-        font-size: @home-btn-size;
-        margin: 0 @padding-base-horizontal;
 
-    }
-    .menu_item{
+    .menu_item,a{
         letter-spacing: -1px;
         display: inline-block;
         text-transform: uppercase;
         font:100  (@menu_item-font-size) 'proxima';
         color:@gray-darkest;
+    }
+    a{
+        text-decoration: none;
 
+        &:hover,&:focus{
+            color:@brand-base;
+        }
+        &:active{
 
-            &:before{
-                content: '|';
-                padding: 0 @padding-base-horizontal*2;
-            }
-            &:first-child:before{
-                content: '';
-            }
-
-
+        }
+    }
+    .menu_item{
+        &:before{
+            content: '|';
+            padding: 0 @padding-base-horizontal*2;
+        }
+        &:first-child:before{
+            content: '';
+        }
     }
 }

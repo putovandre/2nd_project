@@ -9,13 +9,13 @@
         float: right;
         cursor: pointer;
         margin: 20px 10px;
-        font:small-caps @user-box_actions-font-size 'proxima';
+        font:small-caps @user-box_actions-font-size sans-serif;
         color: @gray-darkest;
         .user-box_name{
             display: inline-block;
             //toDO: не нравится фиксацияя 100 ширины, если будет китаец Fu Li, то текст слева а встрелочка справа?
             //toDO: почему имено 100 а не вся свободная ширина? хочу чтобы имя было в одну строку на всю свободную ширину до картинки
-            width: 100px;
+            width: 100%;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;

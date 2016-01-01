@@ -23,7 +23,7 @@
 @font-size-large:         ceil((@font-size-base * 1.25)); //18
 @font-size-small:         ceil((@font-size-base * 0.85)); //12
 
-@font-size-h1:            floor(((@font-size-base) * 3.2));
+@font-size-h1:            floor(((@font-size-base) * 3.4));
 @font-size-h2:            floor((@font-size-base * 2.15)); 
 @font-size-h3:            ceil((@font-size-base * 1.7)); 
 @font-size-h4:            ceil((@font-size-base * 1.25)); 
@@ -38,7 +38,7 @@
 //paddings
 @padding-base-vertical:  		5px;
 @padding-base-horizontal:  		5px;
-@padding-large-horizontal:      @padding-base-horizontal;
+@padding-large-horizontal:      (@padding-base-horizontal)*4;
 
 
 
@@ -82,3 +82,9 @@
 //menu
 @home-btn-size: 25px;
 @menu_item-font-size: 16px;
+@menu-margin-top:(@home-btn-size)/3;
+@l-home-btn-color: @gray-darkest;
+
+//today panel
+@temp-font-size: (@font-size-base)*1.2;
+@today-panel_name: 20px;
