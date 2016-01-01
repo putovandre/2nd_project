@@ -196,17 +196,14 @@ ul {
   float: right;
 }
 .user-box .user-box_name {
-  display: inline-block;
   float: right;
   cursor: pointer;
   font: small-caps 14px sans-serif;
   color: #666666;
-  max-width: 60%;
   margin: 20px 5px 0 0;
 }
 .user-box .user-box_name:after {
   text-align: right;
-  display: inline-block;
   padding: 0 5px;
   color: #666666;
   font: 14px FontAwesome;
@@ -218,10 +215,6 @@ ul {
 }
 .user-box .user-box_name:hover:after {
   color: #999999;
-  text-decoration: underline;
-}
-.user-box .user-box_name-arrow {
-  display: inline-block;
 }
 .l-home-btn {
   display: inline-block;
