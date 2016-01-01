@@ -3,37 +3,37 @@
     img{
         float: right;
     }
-    //toDO: до сих пор пробел и стрелка тоже подчеркнуты на ховер
-    //toDO: не понимаю зачем на один логический элемент - имя два класса user-box_actions и user-box_name
-    .user-box_actions {
-        float: right;
-        cursor: pointer;
-        margin: 20px 10px;
-        font:small-caps @user-box_actions-font-size sans-serif;
-        color: @gray-darkest;
         .user-box_name{
             display: inline-block;
-            //toDO: не нравится фиксацияя 100 ширины, если будет китаец Fu Li, то текст слева а встрелочка справа?
-            //toDO: почему имено 100 а не вся свободная ширина? хочу чтобы имя было в одну строку на всю свободную ширину до картинки
-            width: 100%;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            margin-bottom: -@padding-base-horizontal;
-
-        }
-        &:after {
-            padding: 0 @padding-base-horizontal;
+            float: right;
+            cursor: pointer;
+            font:small-caps @user-box_actions-font-size sans-serif;
             color: @gray-darkest;
-            font: @font-size-base FontAwesome;
-            content: '\f0d7'
-        }
+            max-width: 60%;
+            //toDo стрелка стрелка
+            margin: @padding-large-horizontal  @padding-base-horizontal 0 0 ;
+            &:after {
+                text-align: right;
+                display: inline-block;
+                padding: 0 @padding-base-horizontal;
+                color: @gray-darkest;
+                font: @font-size-base FontAwesome;
+                content: '\f0d7'
+
+            }
         &:hover {
             color: @gray-dark;
-            border-bottom: 1px solid @gray-dark;
+            text-decoration: underline;
             &:after {
                 color: @gray-dark;
+                text-decoration: underline;
             }
         }
+        }
+
+    .user-box_name-arrow{
+        display: inline-block;
+
     }
+
 }

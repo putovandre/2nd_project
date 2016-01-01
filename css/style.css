@@ -144,7 +144,7 @@ ul {
 .search .search_btn_more {
   cursor: pointer;
   color: #0096af;
-  margin: 7px 20px;
+  margin: 7px 5px;
   font-size: 14px;
   float: right;
 }
@@ -195,33 +195,33 @@ ul {
 .user-box img {
   float: right;
 }
-.user-box .user-box_actions {
+.user-box .user-box_name {
+  display: inline-block;
   float: right;
   cursor: pointer;
-  margin: 20px 10px;
   font: small-caps 14px sans-serif;
   color: #666666;
+  max-width: 60%;
+  margin: 20px 5px 0 0;
 }
-.user-box .user-box_actions .user-box_name {
+.user-box .user-box_name:after {
+  text-align: right;
   display: inline-block;
-  width: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  margin-bottom: -5px;
-}
-.user-box .user-box_actions:after {
   padding: 0 5px;
   color: #666666;
   font: 14px FontAwesome;
   content: '\f0d7';
 }
-.user-box .user-box_actions:hover {
+.user-box .user-box_name:hover {
   color: #999999;
-  border-bottom: 1px solid #999999;
+  text-decoration: underline;
 }
-.user-box .user-box_actions:hover:after {
+.user-box .user-box_name:hover:after {
   color: #999999;
+  text-decoration: underline;
+}
+.user-box .user-box_name-arrow {
+  display: inline-block;
 }
 .l-home-btn {
   display: inline-block;
