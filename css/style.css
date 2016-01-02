@@ -192,11 +192,13 @@ ul {
 .user-box {
   float: right;
 }
-.user-box img {
+.user-box .user-box_pic {
+  width: 34px;
   float: right;
+  display: inline;
 }
 .user-box .user-box_name {
-  max-width: 80%;
+  display: inline;
   float: right;
   cursor: pointer;
   font: small-caps 14px sans-serif;
@@ -209,12 +211,15 @@ ul {
   font: 14px FontAwesome;
   content: '\f0d7';
 }
-.user-box .user-box_name:hover {
+.user-box .user-box_name:hover div {
   color: #999999;
   text-decoration: underline;
 }
-.user-box .user-box_name:hover:after {
+.user-box .user-box_name:hover div:after {
   color: #999999;
+}
+.user-box_text-box {
+  margin-right: 39px;
 }
 .l-home-btn {
   display: inline-block;
