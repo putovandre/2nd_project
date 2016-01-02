@@ -1,16 +1,20 @@
 .user-box {
     float: right;
-
+    //toDO: если у тебя еже заведен класс то обращайся по нему. вообще лучше обращаться по классам а не тэгам
+    //toDo: исключение когда одному логическому элементу нужно 2 тэга. например <div class="user-box_name"><div>Name</div></div>
     img{
         float: right;
     }
+
+    //toDO: мне не нравится max-width: 80%; - это имеет смысл есл у тебя картинка 20% - в данном же случае
+    //toDO: я бы завел еще 1 див под верстку ширины .user-box_pic{float:right; width @user-box_pic-width;} .user-box_text-box {margin-right: @user-box_pic-width+@padding-base-horizontal;} например
         .user-box_name{
+            //toDo <div class="user-box_name"><div>Имя</div></div> .user-box_name:after {стрелочка} .user-box_name:hover div {подчеркивание} примерно суть такая
             max-width: 80%;
             float: right;
             cursor: pointer;
             font:small-caps @user-box_actions-font-size sans-serif;
             color: @gray-darkest;
-            //toDo стрелка стрелка
             margin: @padding-large-horizontal  @padding-base-horizontal 0 0 ;
             &:after {
                 padding: 0 @padding-base-horizontal;
