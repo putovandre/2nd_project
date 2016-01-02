@@ -1,9 +1,11 @@
 .user-box {
     float: right;
+
     img{
         float: right;
     }
         .user-box_name{
+            max-width: 80%;
             float: right;
             cursor: pointer;
             font:small-caps @user-box_actions-font-size sans-serif;
@@ -11,7 +13,6 @@
             //toDo стрелка стрелка
             margin: @padding-large-horizontal  @padding-base-horizontal 0 0 ;
             &:after {
-                text-align: right;
                 padding: 0 @padding-base-horizontal;
                 color: @gray-darkest;
                 font: @font-size-base FontAwesome;

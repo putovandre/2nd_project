@@ -196,6 +196,7 @@ ul {
   float: right;
 }
 .user-box .user-box_name {
+  max-width: 80%;
   float: right;
   cursor: pointer;
   font: small-caps 14px sans-serif;
@@ -203,7 +204,6 @@ ul {
   margin: 20px 5px 0 0;
 }
 .user-box .user-box_name:after {
-  text-align: right;
   padding: 0 5px;
   color: #666666;
   font: 14px FontAwesome;
