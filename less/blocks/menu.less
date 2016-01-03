@@ -11,12 +11,11 @@
         color:@l-home-btn-color;
     }
 }
+.l-menu{
+    margin:0 0 0 @menu-margin-left;
+    padding-top: @menu-padding-top;
+}
 .menu{
-    margin-top:@menu-margin-top;
-    //toDo: вот это не нравится - верстаем модулями - ты должен предполагать что горизонтальное меню может появится и в другом месте, и без иконки home.
-    //toDo: поэтому убирай float: left;  по -моему должно быть <div class="u-clearfix"><i class="fa fa-home l-home-btn" /><div class="l-menu"><ul class="menu">...</ul></div>
-    //toDo: ну и стандартно .l-menu {margin-left: ширина иконки} - этим мы достигаем что можем легко взять иеню <ul class="menu"> и переместить в любой столбец
-    float: left;
     ul{
         display: inline-block;
         margin-left: -10px;
@@ -47,6 +46,7 @@
         }
         &:first-child:before{
             content: '';
+            padding: 0 @padding-base-horizontal;
         }
     }
 }

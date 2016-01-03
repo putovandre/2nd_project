@@ -202,7 +202,7 @@ ul {
   font-size: 12.6px;
   font-family: sans-serif;
   color: #666666;
-  margin: 20px 5px 0 0;
+  margin: 20px 5px 0 70px;
 }
 .user-box .user-box_name div:after {
   display: inline-block;
@@ -233,9 +233,9 @@ ul {
 .l-home-btn:focus {
   color: #666666;
 }
-.menu {
-  margin-top: 8.33333333px;
-  float: left;
+.l-menu {
+  margin: 0 0 0 35px;
+  padding-top: 7.5px;
 }
 .menu ul {
   display: inline-block;
@@ -262,6 +262,7 @@ ul {
 }
 .menu .menu_item:first-child:before {
   content: '';
+  padding: 0 5px;
 }
 .today-panel {
   background-color: #ff6400;
