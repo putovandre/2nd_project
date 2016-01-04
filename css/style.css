@@ -21,7 +21,8 @@ h4,
 p,
 ul,
 li,
-table {
+table,
+img {
   margin: 0;
   padding: 0;
 }
@@ -126,6 +127,9 @@ ul {
 .u-padding-top2 {
   padding-top: 30px;
 }
+.u-push-right-padding {
+  padding-right: -15px;
+}
 .u-inline-block {
   position: relative;
   display: inline-block;
@@ -198,7 +202,8 @@ ul {
   float: right;
 }
 .user-box .user-box_pic {
-  width: 34px;
+  width: 45px;
+  padding-right: 5px;
   float: right;
 }
 .user-box .user-box_name div {
@@ -207,7 +212,7 @@ ul {
   font-size: 12.6px;
   font-family: sans-serif;
   color: #666666;
-  margin: 20px 5px 0 70px;
+  margin: 20px 5px 0 60px;
 }
 .user-box .user-box_name div:after {
   display: inline-block;
@@ -225,7 +230,7 @@ ul {
   color: #999999;
 }
 .user-box_text-box {
-  margin-right: 39px;
+  margin-right: 50px;
 }
 .l-home-btn {
   display: inline-block;
@@ -292,8 +297,18 @@ ul {
   font-weight: 100;
 }
 .news_pic {
+  float: right;
   width: 100%;
-  padding-bottom: 15px;
+  margin-bottom: 15px;
+  zoom: 1;
+}
+.news_pic:before,
+.news_pic:after {
+  content: "";
+  display: table;
+}
+.news_pic:after {
+  clear: both;
 }
 .carousel_pic {
   width: 100%;
