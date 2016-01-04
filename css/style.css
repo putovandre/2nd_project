@@ -297,18 +297,7 @@ ul {
   font-weight: 100;
 }
 .news_pic {
-  float: right;
   width: 100%;
-  margin-bottom: 15px;
-  zoom: 1;
-}
-.news_pic:before,
-.news_pic:after {
-  content: "";
-  display: table;
-}
-.news_pic:after {
-  clear: both;
 }
 .carousel_pic {
   width: 100%;
