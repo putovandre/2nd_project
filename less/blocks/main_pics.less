@@ -1,15 +1,12 @@
-.news_pic{
+.news_pic, .carousel_pic{
     width:100%;
 }
 
-.carousel_pic{
-    width:100%;
-}
 
 
 .carousel_text-box{
     margin-top: @carousel_text-box-margin-top;
-    position: absolute;
+    position: relative;
     padding:@padding-large-horizontal;
     .carousel_text-box_lable{
         width: 0;
@@ -44,4 +41,59 @@
         }
     }
 
+}
+
+//toDO Почему в промежутках между точками курсор выделения? баг fontawesome?
+.carousel_nav{
+    margin: @carousel_nav-margin;
+    position: relative;
+    .carousel_nav_dot-active{
+        color: @brand-blue;
+    }
+    .carousel_nav_dot{
+        color:@gray;
+    }
+    .carousel_nav_dot-active, .carousel_nav_dot{
+        padding-right: @padding-base-horizontal*.7;
+        font-size: @font-size-base*1.2;
+        cursor: pointer;
+        display: inline-block;
+        &:hover{
+            opacity: .7;
+        }
+    }
+}
+
+
+.news_pic{
+
+}
+
+.l-news_pic_text, .news_pic_text{
+    position: relative;
+    margin-top: @l-news_pic_text-margin;
+}
+    .l-news_pic_text {
+        background-color: fade(@gray-darkest, 70%);
+        width: 100%;
+        height: @l-news_pic_text-heigh;
+
+    }
+    .news_pic_text {
+        cursor: pointer;
+        color: @white;
+        font-size: @font-size-h3;
+        font-family: sans-serif;
+        text-transform: uppercase;
+        padding:  @padding-mid-horizontal @padding-mid-horizontal 0 @padding-large-horizontal;
+
+    }
+.news{
+    cursor: pointer;
+    &:hover{
+        .l-news_pic_text {
+            background-color: fade(@gray-darkest, 90%);
+            .news_pic-margin-mixin(@l-news_pic_text-margin-hover);
+        }
+    }
 }

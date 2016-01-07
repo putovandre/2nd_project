@@ -286,22 +286,21 @@ ul {
 #wxTemp,
 #wxIntro {
   display: inline-block;
-  font: (14px)*1.2 sans-serif;
+  font-size: 14PX;
+  font-family: sans-serif;
   color: #fff;
   margin-top: 5px;
 }
 #wxIntro {
   font-weight: 100;
 }
-.news_pic {
-  width: 100%;
-}
+.news_pic,
 .carousel_pic {
   width: 100%;
 }
 .carousel_text-box {
   margin-top: -290px;
-  position: absolute;
+  position: relative;
   padding: 20px;
 }
 .carousel_text-box .carousel_text-box_lable {
@@ -335,4 +334,51 @@ ul {
 .carousel_text-box .carousel_text-box_showmore:hover,
 .carousel_text-box .carousel_text-box_showmore:focus {
   text-decoration: underline;
+}
+.carousel_nav {
+  margin: -40px 0 0 620px;
+  position: relative;
+}
+.carousel_nav .carousel_nav_dot-active {
+  color: #0096af;
+}
+.carousel_nav .carousel_nav_dot {
+  color: #cccccc;
+}
+.carousel_nav .carousel_nav_dot-active,
+.carousel_nav .carousel_nav_dot {
+  padding-right: 3.5px;
+  font-size: 16.8px;
+  cursor: pointer;
+  display: inline-block;
+}
+.carousel_nav .carousel_nav_dot-active:hover,
+.carousel_nav .carousel_nav_dot:hover {
+  opacity: .7;
+}
+.l-news_pic_text,
+.news_pic_text {
+  position: relative;
+  margin-top: -50px;
+}
+.l-news_pic_text {
+  background-color: rgba(102, 102, 102, 0.7);
+  width: 100%;
+  height: 47px;
+}
+.news_pic_text {
+  cursor: pointer;
+  color: #fff;
+  font-size: 17px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  padding: 15px 15px 0 20px;
+}
+.news {
+  cursor: pointer;
+}
+.news:hover .l-news_pic_text {
+  background-color: rgba(102, 102, 102, 0.9);
+  margin-top: -60px;
+  height: 57px;
 }
