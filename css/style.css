@@ -95,6 +95,12 @@ ul {
 .row:after {
   clear: both;
 }
+.push-right {
+  padding-right: 8.5px;
+}
+.push-left {
+  padding-left: 8.5px;
+}
 .container {
   width: 1024px;
   margin: 0 auto;
@@ -298,6 +304,9 @@ ul {
 .carousel_pic {
   width: 100%;
 }
+.news_pic {
+  margin-bottom: -4px;
+}
 .carousel_text-box {
   margin-top: -290px;
   position: relative;
@@ -364,7 +373,7 @@ ul {
 .l-news_pic_text {
   background-color: rgba(102, 102, 102, 0.7);
   width: 100%;
-  height: 47px;
+  height: 50px;
 }
 .news_pic_text {
   cursor: pointer;
@@ -380,5 +389,5 @@ ul {
 .news:hover .l-news_pic_text {
   background-color: rgba(102, 102, 102, 0.9);
   margin-top: -60px;
-  height: 57px;
+  height: 60px;
 }
