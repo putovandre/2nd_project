@@ -13,7 +13,7 @@
 .textnews_item{
     float: left;
     margin: 0 @padding-base-horizontal @padding-base-horizontal 0;
-    width: 190px;
+    width: 193px;
     height: 50px;
     background-color: @gray-light;
     padding: @padding-mid-horizontal @padding-large-horizontal;
@@ -25,7 +25,7 @@
         font-weight: 100;
         display: block; /* Fallback for non-webkit */
         display: -webkit-box;
-        max-width: 190px;
+        max-width: 180px;
         height: @font-size*@line-height*@lines-to-show; /* Fallback for non-webkit */
         font-size: @font-size;
         line-height: @line-height;
@@ -46,3 +46,62 @@
     margin: 0 @padding-mid-horizontal @padding-mid-horizontal 0;
 }
 
+
+
+
+//links tab
+.links{
+    width:100%;
+    .links_tab{
+        border-bottom: 1px solid @gray;
+        .links_tab_btn, .links_tab_btn-active{
+            cursor: pointer;
+            text-transform: uppercase;
+            color: @gray-darkest;
+            font-weight: 900;
+            margin:0 -3px -1px 0;
+            display: inline-block;
+            border:1px solid @gray;
+            padding: @padding-mid-horizontal @padding-large-horizontal;
+        }
+        .links_tab_btn-active{
+            color:@white;
+            border-color: @brand-blue;
+            background-color: @brand-blue;
+        }
+    }
+}
+
+.links_my-links {
+    margin-right: -10px;
+
+    .links_my-links_item {
+        margin: @padding-mid-horizontal @padding-mid-horizontal 0 0;
+        padding: @padding-large-horizontal 0;
+        display: inline-block;
+        float: left;
+        background-color: @gray-light;
+        width: 170px;
+        height: @links_my-links_item-height;
+        .l-links_my-links_item_pic {
+            width:100%;
+            float: left;
+            .links_my-links_item_pic {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+        .l-links_my-links_item_text {
+            margin-top: @links_my-links_item-height - 10;
+            .links_my-links_item_text {
+                letter-spacing:-1px;
+                padding: @padding-mid-horizontal 0 0 @padding-large-horizontal;
+                cursor: pointer;
+                &:after{
+                    font-family: FontAwesome;
+                    content: " \f101";
+                }
+            }
+        }
+    }
+}
