@@ -81,6 +81,9 @@
 
 
         <div class="row u-padding-top">
+            <!--toDo: вот здесь push-right с паддигом лишнее. Посмотри на макет - у тебя 4 различных расстояния между колонками (я бы сделал 3, сделав одинаковым растояния между колонками баннера, между колонками новостей, и в баннерах ссылок)
+            toDo: это бы расстояние я бы и сделал базовым. Дальше вопрос как поддерживать разные гриды - ты выбрал классы модификаторы паддинга в колонках. Но лучше чтобы в одной строке были колонки только с одним паддингом и завечти клсассы для строк - .row-sm, .row, .row-lg
+            toDo: и для всех колонок в конкретном классе строки переписывать паддинг -->
             <div class="col-9 push-right">
                 <div class="carousel">
                     <ul>
@@ -118,6 +121,8 @@
 
         <div class="row u-padding-top-lg">
             <!--Text news Tab -->
+            <!--toDo: здесь неверно - запомни столбец всегда в строке. тут нужно посмотреть на макет страницы - судя по всему весь контент имеет отступ справа и слева по сраснению с шириной хедера и меню
+            toDo: тогда иммет смысл завести класс .l-content-container {width:...; margin:0 auto;} и тогда например ты сможешь в него кинуть просто текст вместо грида и у тебя будет такая же ширина на внутреней странице со статьей-->
             <div class="col-9">
                 <!--Trending_now Tab -->
                 <div class="col-4">
@@ -140,7 +145,10 @@
                 </div>
                 <!--My news Tab -->
                 <div class="col-8">
+                    <!--toDo: это заголовок, пора вводить систему заголовков - прописывать в typo.less линейку размеров и свойств для h1...h6 -->
                     <div class="textnews_text">My news</div>
+                    <!--toDo: это ссылка на новость, при щелчке переходит на страницу с полной статьей - тогда тэг a с классом, убрать лишние 2 тэгп -->
+                    <!--toDo: почему при ховере ... остается серым? исправится когда 2 тэга лишних уберешь -->
                     <a href="#">
                         <div class="textnews_item">
                             <p class="textnews_item_text">Trade-offs can be viewed in terms of goods given for goods received.</p>
@@ -173,9 +181,14 @@
                     </a>
                 </div>
                 <!--Links Tab -->
+                <!--toDo: столбец всегда в строке -->
                 <div class="col-12  u-padding-top-lg">
                     <div class="links">
                         <div class="links_tab">
+                            <!--toDo: тут можно по разному -->
+                            <!--toDo: если по BEM то класс модификатор class="links_tab_btn links_tab_btn__active" -->
+                            <!--toDo: можно завести стандартные классы состояний для всех элементов class="links_tab_btn is-active" -->
+                            <!--toDo: в bootstrap просто active добавляют, можно state-active, но лично мне нравится завести вспомогательные классы на подобии .l- и .u- : .is- -->
                             <div class="links_tab_btn-active">My links</div>
                             <div class="links_tab_btn">Collaboration</div>
                         </div>
@@ -183,9 +196,12 @@
                         <div class="links_my-links">
                             <div class="links_my-links_item">
                                 <div class="l-links_my-links_item_pic">
+                                    <!--toDo: зачем картинке в диве с классом давать свой класс? да еще такой же -->
+                                    <!--toDo: а если картинка большая? тут судя по всему контент будет менятся - какая то девочка контент-мэнеджер будет логотипы ссовать и может большой сунуть -->
                                     <img src="images/my_links_tab/bbc.png" alt="bbc" class="links_my-links_item_pic">
                                 </div>
                                 <div class="l-links_my-links_item_text">
+                                    <!--toDo: если текст длинный все едет -->
                                     <a class="links_my-links_item_text">News</a>
                                 </div>
                             </div>
