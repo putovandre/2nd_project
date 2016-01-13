@@ -108,13 +108,13 @@
             </div>
             <div class="col-3 col-sm">
                 <div class="news">
-                <img src="images/carousel/sm-pic_1.jpg" alt="news_pic_1" class="news_pic">
-                <div class="l-news_pic_text"><h3 class="news_pic_text">Pokushati borgis</h3></div>
-                    </div>
+                    <img src="images/carousel/sm-pic_1.jpg" alt="news_pic_1" class="news_pic">
+                    <div class="l-news_pic_text"><h3 class="news_pic_text">Pokushati borgis</h3></div>
+                </div>
                 <div class="news">
-                <img src="images/carousel/sm-pic_2.jpg" alt="news_pic_1" class="news_pic u-padding-top">
-                <div class="l-news_pic_text"><h3 class="news_pic_text">Zul otto shi</h3></div>
-                    </div>
+                    <img src="images/carousel/sm-pic_2.jpg" alt="news_pic_1" class="news_pic u-padding-top">
+                    <div class="l-news_pic_text"><h3 class="news_pic_text">Zul otto shi</h3></div>
+                </div>
             </div>
         </div>
 
@@ -124,98 +124,56 @@
             <!--Text news Tab -->
             <!--toDo: здесь неверно - запомни столбец всегда в строке. тут нужно посмотреть на макет страницы - судя по всему весь контент имеет отступ справа и слева по сраснению с шириной хедера и меню
             toDo: тогда иммет смысл завести класс .l-content-container {width:...; margin:0 auto;} и тогда например ты сможешь в него кинуть просто текст вместо грида и у тебя будет такая же ширина на внутреней странице со статьей-->
-<div class="l-content-container">
-            <div class="col-9 col-sm">
+            <div class="l-content-container">
+                <div class="col-9 col-sm">
 
                 <!--Trending_now Tab -->
 
-                <div class="col-4 col-sm">
-                    <h3>Trending now</h3>
-                    <a href="#">
-                        <div class="textnews_item">
-                            <p class="textnews_item_text">Trade-offs can be viewed in terms of goods given for goods received.</p>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="textnews_item">
-                            <p class="textnews_item_text">Trade-offs can be viewed in terms of goods given for goods received.</p>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="textnews_item">
-                            <p class="textnews_item_text">Trade-offs can be viewed in terms of goods given for goods received.</p>
-                        </div>
-                    </a>
-                </div>
-                <!--My news Tab -->
-                <div class="col-8 col-sm">
-                    <h3>My news</h3>
-                    <!--toDo: это ссылка на новость, при щелчке переходит на страницу с полной статьей - тогда тэг a с классом, убрать лишние 2 тэгп -->
-                    <!--toDo: почему при ховере ... остается серым? исправится когда 2 тэга лишних уберешь -->
-                    <a href="#" class="">Trade-offs can be viewed in terms of goods given for goods received.
-                        <div class="textnews_item">
-                            <p class="textnews_item_text"></p>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="textnews_item">
-                            <p class="textnews_item_text">Trade-offs can be viewed in terms of goods given for goods received.</p>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="textnews_item">
-                            <p class="textnews_item_text">Trade-offs can be viewed in terms of goods given for goods received.</p>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="textnews_item">
-                            <p class="textnews_item_text">Trade-offs can be viewed in terms of goods given for goods received.</p>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="textnews_item">
-                            <p class="textnews_item_text">Short one.</p>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="textnews_item">
-                            <p class="textnews_item_text">Trade-offs can be viewed in terms of goods given for goods received.</p>
-                        </div>
-                    </a>
-                </div>
-                <!--Links Tab -->
-                <div class="col-12 col-sm  u-padding-top-lg">
-                    <div class="links">
-                        <div class="links_tab">
-                            <!--toDo: тут можно по разному -->
-                            <!--toDo: если по BEM то класс модификатор class="links_tab_btn links_tab_btn__active" -->
-                            <!--toDo: можно завести стандартные классы состояний для всех элементов class="links_tab_btn is-active" -->
-                            <!--toDo: в bootstrap просто active добавляют, можно state-active, но лично мне нравится завести вспомогательные классы на подобии .l- и .u- : .is- -->
-                            <div class="links_tab_btn-active">My links</div>
-                            <div class="links_tab_btn">Collaboration</div>
-                        </div>
+                    <div class="col-4 col-sm">
+                        <h3>Trending now</h3>
+                        <a href="#" class="textnews_item"><span>Trade-offs can be viewed in terms of goods given for goods received.</span></a>
+                        <a href="#"  class="textnews_item">Trade-offs can be viewed in terms of goods given for goods received.</a>
+                        <a href="#" class="textnews_item">Trade-offs can be viewed in terms of goods given for goods received.</a>
+                    </div>
+                    <!--Trending now/My news Tab -->
+                    <div class="col-8 col-sm">
+                        <h3>My news</h3>
+                        <a href="#" class="textnews_item">Trade-offs can be viewed in terms of goods given for goods received.</a>
+                        <a href="#" class="textnews_item">Trade-offs can be viewed in terms of goods given for goods received.</a>
+                        <a href="#" class="textnews_item">Trade-offs can be viewed in terms of goods given for goods received.</a>
+                        <a href="#" class="textnews_item">Trade-offs can be viewed in terms of goods given for goods received.</a>
+                        <a href="#" class="textnews_item">Trade-offs can be viewed in terms of goods given for goods received.</a>
+                        <a href="#" class="textnews_item">Trade-offs can be viewed in terms of goods given for goods received.</a>
+                    </div>
 
-                        <div class="links_my-links">
-                            <div class="links_my-links_item">
-                                <div class="l-links_my-links_item_pic">
-                                    <!--toDo: зачем картинке в диве с классом давать свой класс? да еще такой же -->
-                                    <!--toDo: а если картинка большая? тут судя по всему контент будет менятся - какая то девочка контент-мэнеджер будет логотипы ссовать и может большой сунуть -->
-                                    <img src="images/my_links_tab/bbc.png" alt="bbc" class="links_my-links_item_pic">
-                                </div>
-                                <div class="l-links_my-links_item_text">
-                                    <!--toDo: если текст длинный все едет -->
-                                    <a class="links_my-links_item_text">News</a>
-                                </div>
+                    <!--Links Tab -->
+                    <div class="col-12 col-sm  u-padding-top-lg">
+                        <div class="links">
+                            <div class="links_tab">
+                                <div class="links_tab_btn links_tab_btn-active">My links</div>
+                                <div class="links_tab_btn">Collaboration</div>
                             </div>
 
-                            <div class="links_my-links_item">
-                                <div class="l-links_my-links_item_pic">
-                                    <img src="images/my_links_tab/cnn.jpg" alt="cnn" class="links_my-links_item_pic">
+                            <div class="links_my-links">
+                                <div class="links_my-links_item">
+                                        <!--toDo: зачем картинке в диве с классом давать свой класс? да еще такой же -->
+                                        <!--toDo: а если картинка большая? тут судя по всему контент будет менятся - какая то девочка контент-мэнеджер будет логотипы ссовать и может большой сунуть -->
+                                    <div class="l-links_my-links_item_pic">
+                                        <img src="images/my_links_tab/bbc.png" alt="bbc" class="links_my-links_item_pic">
+                                    </div>   <!--toDo: если текст длинный все едет -->
+                                    <div class="l-links_my-links_item_text">
+                                        <a class="links_my-links_item_text">News</a>
+                                    </div>
                                 </div>
-                                <div class="l-links_my-links_item_text">
-                                    <a class="links_my-links_item_text">News</a>
+
+                                <div class="links_my-links_item">
+                                    <div class="l-links_my-links_item_pic">
+                                        <img src="images/my_links_tab/cnn.jpg" alt="cnn" class="links_my-links_item_pic">
+                                    </div>
+                                    <div class="l-links_my-links_item_text">
+                                        <a class="links_my-links_item_text">Neilnlknwldkb wknlkblbws</a>
+                                    </div>
                                 </div>
-                            </div>
 
                                 <div class="links_my-links_item">
                                     <div class="l-links_my-links_item_pic">
@@ -226,67 +184,64 @@
                                     </div>
                                 </div>
 
-                            <div class="links_my-links_item">
-                                <div class="l-links_my-links_item_pic">
-                                    <img src="images/my_links_tab/concur.png" alt="concur" class="links_my-links_item_pic">
+                                <div class="links_my-links_item">
+                                    <div class="l-links_my-links_item_pic">
+                                        <img src="images/my_links_tab/concur.png" alt="concur" class="links_my-links_item_pic">
+                                    </div>
+                                    <div class="l-links_my-links_item_text">
+                                        <a class="links_my-links_item_text">Travel & Expences</a>
+                                    </div>
                                 </div>
-                                <div class="l-links_my-links_item_text">
-                                    <a class="links_my-links_item_text">Travel & Expences</a>
+
+                                <div class="links_my-links_item">
+                                    <div class="l-links_my-links_item_pic">
+                                        <img src="images/my_links_tab/workday.png" alt="workday" class="links_my-links_item_pic">
+                                    </div>
+                                    <div class="l-links_my-links_item_text">
+                                        <a class="links_my-links_item_text">Human resources</a>
+                                    </div>
+                                </div>
+
+                                <div class="links_my-links_item">
+                                    <div class="l-links_my-links_item_pic">
+                                        <img src="images/my_links_tab/concur.png" alt="concur" class="links_my-links_item_pic">
+                                    </div>
+                                    <div class="l-links_my-links_item_text">
+                                        <a class="links_my-links_item_text">Travel & Expences</a>
+                                    </div>
+                                </div>
+
+                                <div class="links_my-links_item">
+                                    <div class="l-links_my-links_item_pic">
+                                        <img src="images/my_links_tab/bbc.png" alt="bbc" class="links_my-links_item_pic">
+                                    </div>
+                                    <div class="l-links_my-links_item_text">
+                                        <a class="links_my-links_item_text">News</a>
+                                    </div>
+                                </div>
+
+                                <div class="links_my-links_item">
+                                    <div class="l-links_my-links_item_pic">
+                                        <img src="images/my_links_tab/cnn.jpg" alt="cnn" class="links_my-links_item_pic">
+                                    </div>
+                                    <div class="l-links_my-links_item_text">
+                                        <a class="links_my-links_item_text">News</a>
+                                    </div>
                                 </div>
                             </div>
-
-                            <div class="links_my-links_item">
-                                <div class="l-links_my-links_item_pic">
-                                    <img src="images/my_links_tab/workday.png" alt="workday" class="links_my-links_item_pic">
-                                </div>
-                                <div class="l-links_my-links_item_text">
-                                    <a class="links_my-links_item_text">Human resources</a>
-                                </div>
-                            </div>
-
-                            <div class="links_my-links_item">
-                                <div class="l-links_my-links_item_pic">
-                                    <img src="images/my_links_tab/concur.png" alt="concur" class="links_my-links_item_pic">
-                                </div>
-                                <div class="l-links_my-links_item_text">
-                                    <a class="links_my-links_item_text">Travel & Expences</a>
-                                </div>
-                            </div>
-
-                            <div class="links_my-links_item">
-                                <div class="l-links_my-links_item_pic">
-                                    <img src="images/my_links_tab/bbc.png" alt="bbc" class="links_my-links_item_pic">
-                                </div>
-                                <div class="l-links_my-links_item_text">
-                                    <a class="links_my-links_item_text">News</a>
-                                </div>
-                            </div>
-
-                            <div class="links_my-links_item">
-                                <div class="l-links_my-links_item_pic">
-                                    <img src="images/my_links_tab/cnn.jpg" alt="cnn" class="links_my-links_item_pic">
-                                </div>
-                                <div class="l-links_my-links_item_text">
-                                    <a class="links_my-links_item_text">News</a>
-                                </div>
-                            </div>
-
                         </div>
                     </div>
                 </div>
-            </div>
 
 
             <!--Adv Tab -->
-            <div class="col-3 pull-right col-sm">
-                <a href="#" class="adv_pic"><img src="images/adv/adv_pic_1.jpg" alt="adv_pic_1"></a>
-                <a href="#" class="adv_pic"><img src="images/adv/adv_pic_2.jpg" alt="adv_pic_2"></a>
-                <a href="#" class="adv_pic"><img src="images/adv/adv_pic_3.jpg" alt="adv_pic_3"></a>
+                <div class="col-3 pull-right col-sm">
+                    <a href="#" class="adv_pic"><img src="images/adv/adv_pic_1.jpg" alt="adv_pic_1"></a>
+                    <a href="#" class="adv_pic"><img src="images/adv/adv_pic_2.jpg" alt="adv_pic_2"></a>
+                    <a href="#" class="adv_pic"><img src="images/adv/adv_pic_3.jpg" alt="adv_pic_3"></a>
+                </div>
             </div>
-</div>
-
         </div>
-
     </div>
 
 
