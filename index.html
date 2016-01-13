@@ -124,13 +124,13 @@
             <!--Text news Tab -->
             <!--toDo: здесь неверно - запомни столбец всегда в строке. тут нужно посмотреть на макет страницы - судя по всему весь контент имеет отступ справа и слева по сраснению с шириной хедера и меню
             toDo: тогда иммет смысл завести класс .l-content-container {width:...; margin:0 auto;} и тогда например ты сможешь в него кинуть просто текст вместо грида и у тебя будет такая же ширина на внутреней странице со статьей-->
-
+<div class="l-content-container">
             <div class="col-9 col-sm">
 
                 <!--Trending_now Tab -->
 
                 <div class="col-4 col-sm">
-                    <div class="textnews_text">Trending now</div>
+                    <h3>Trending now</h3>
                     <a href="#">
                         <div class="textnews_item">
                             <p class="textnews_item_text">Trade-offs can be viewed in terms of goods given for goods received.</p>
@@ -149,13 +149,12 @@
                 </div>
                 <!--My news Tab -->
                 <div class="col-8 col-sm">
-                    <!--toDo: это заголовок, пора вводить систему заголовков - прописывать в typo.less линейку размеров и свойств для h1...h6 -->
-                    <div class="textnews_text">My news</div>
+                    <h3>My news</h3>
                     <!--toDo: это ссылка на новость, при щелчке переходит на страницу с полной статьей - тогда тэг a с классом, убрать лишние 2 тэгп -->
                     <!--toDo: почему при ховере ... остается серым? исправится когда 2 тэга лишних уберешь -->
-                    <a href="#">
+                    <a href="#" class="">Trade-offs can be viewed in terms of goods given for goods received.
                         <div class="textnews_item">
-                            <p class="textnews_item_text">Trade-offs can be viewed in terms of goods given for goods received.</p>
+                            <p class="textnews_item_text"></p>
                         </div>
                     </a>
                     <a href="#">
@@ -284,7 +283,7 @@
                 <a href="#" class="adv_pic"><img src="images/adv/adv_pic_2.jpg" alt="adv_pic_2"></a>
                 <a href="#" class="adv_pic"><img src="images/adv/adv_pic_3.jpg" alt="adv_pic_3"></a>
             </div>
-
+</div>
 
         </div>
 
