@@ -9,6 +9,10 @@
     padding: 0 (@grid-space)/2;
 }
 
+
+.l-content-container {width:100%; margin:0 auto;}
+
+//
 .logo{
     a {
         cursor: pointer;
@@ -51,4 +55,19 @@
 //search
 .l-search_menu{
     padding: @padding-base-vertical 0 0 0;
+}
+
+
+
+//picture news main block
+
+.l-news_pic_text, .news_pic_text{
+    position: relative;
+    margin-top: @l-news_pic_text-margin;
+}
+.l-news_pic_text {
+    background-color: fade(@gray-darkest, 70%);
+    width: 100%;
+    height: @l-news_pic_text-heigh;
+
 }

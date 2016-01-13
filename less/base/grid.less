@@ -1,4 +1,7 @@
 //grid system
+
+//columns
+
 .col-1  {width: 8.333%; }
 .col-2  {width: 16.666%;}
 .col-3  {width: 25%;    }
@@ -16,15 +19,40 @@
     float: left;
     padding:0 (@grid-space)/2; //переместил паддинг для удобства тестирования
     .box-sizing(border-box);
-
-
 }
+
+.col-sm{
+    padding:0 (@grid-space)/4;
+}
+
+.col-lg{
+    padding:0 @grid-space;
+}
+
+
+//rows
 
 .row{
     margin: 0 (@grid-space)/(-2);
     .clearfix();
 }
 
+
+
+
+.row-lg{
+    margin: 0 (@grid-space)*(-1);
+    .clearfix();
+}
+
+.row-sm{
+    margin: 0 (@grid-space)/(-4);
+    .clearfix();
+}
+
+
+
+//pushes
 
 .push-right{
     padding-right: (@grid-space)/4+1;
