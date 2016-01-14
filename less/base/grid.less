@@ -15,26 +15,21 @@
 .col-11 {width: 91.666%;}
 .col-12 {width: 100%;   }
 
+
+
 .col-1, .col-2, .col-3, .col-4, .col-5,.col-6,.col-7,.col-8,.col-9,.col-10,.col-11,.col-12{
     float: left;
-    padding:0 (@grid-space)/2; //переместил паддинг для удобства тестирования
     .box-sizing(border-box);
 }
-
-.col-sm{
-    padding:0 (@grid-space)/4;
-}
-
-.col-lg{
-    padding:0 @grid-space;
-}
-
 
 //rows
 
 .row{
     margin: 0 (@grid-space)/(-2);
     .clearfix();
+    .col-1, .col-2, .col-3, .col-4, .col-5,.col-6,.col-7,.col-8,.col-9,.col-10,.col-11,.col-12{
+        padding:0 (@grid-space)/2;
+    }
 }
 
 
@@ -43,20 +38,18 @@
 .row-lg{
     margin: 0 (@grid-space)*(-1);
     .clearfix();
+    .col-1, .col-2, .col-3, .col-4, .col-5,.col-6,.col-7,.col-8,.col-9,.col-10,.col-11,.col-12{
+        padding:0 @grid-space;
+    }
 }
 
 .row-sm{
     margin: 0 (@grid-space)/(-4);
     .clearfix();
+    .col-1, .col-2, .col-3, .col-4, .col-5,.col-6,.col-7,.col-8,.col-9,.col-10,.col-11,.col-12{
+        padding:0 (@grid-space)/4;
+    }
 }
 
 
 
-//pushes
-// toDo: я бы переименовал на .u-push-right и перенес в утилитные классы - часто используется и не несет никакой смысловой нагурзки кроме флоата
-.push-right{
-    padding-right: (@grid-space)/4+1;
-}
-.push-left{
-    padding-left: (@grid-space)/4+1;
-}

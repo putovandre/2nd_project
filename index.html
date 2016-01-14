@@ -81,13 +81,7 @@
 
         <!--carousel, pic-news -->
         <div class="row-sm u-padding-top">
-            <!--toDo: вот здесь push-right с паддигом лишнее. Посмотри на макет - у тебя 4 различных расстояния между колонками (я бы сделал 3, сделав одинаковым растояния между колонками баннера, между колонками новостей, и в баннерах ссылок)
-            toDo: это бы расстояние я бы и сделал базовым. Дальше вопрос как поддерживать разные гриды - ты выбрал классы модификаторы паддинга в колонках. Но лучше чтобы в одной строке были колонки только с одним паддингом и завечти клсассы для строк - .row-sm, .row, .row-lg
-            toDo: и для всех колонок в конкретном классе строки переписывать паддинг -->
-
-            <!--toDo: col-sm быть не должно - ты для того и давал row-sm чтобы поменять размерность грида можно было задав 1 класс к строке, паддинги должны проставляться от строки .row-sm { .col-1, ... col-12 {padding: ... }}
-            toDo: должно быть удобно - проставил 1 класс у тебя верстка поменялась и ничего не поехало. -->
-            <div class="col-9 col-sm">
+            <div class="col-9">
                 <div class="carousel">
                     <ul>
                         <li>
@@ -109,7 +103,7 @@
                 </div>
 
             </div>
-            <div class="col-3 col-sm">
+            <div class="col-3">
                 <div class="news">
                     <img src="images/carousel/sm-pic_1.jpg" alt="news_pic_1" class="news_pic">
                     <div class="l-news_pic_text"><h3 class="news_pic_text">Pokushati borgis</h3></div>
@@ -128,18 +122,18 @@
             <!--toDo: здесь неверно - запомни столбец всегда в строке. тут нужно посмотреть на макет страницы - судя по всему весь контент имеет отступ справа и слева по сраснению с шириной хедера и меню
             toDo: тогда иммет смысл завести класс .l-content-container {width:...; margin:0 auto;} и тогда например ты сможешь в него кинуть просто текст вместо грида и у тебя будет такая же ширина на внутреней странице со статьей-->
             <div class="l-content-container">
-                <div class="col-9 col-sm">
+                <div class="col-9">
 
                 <!--Trending_now Tab -->
 
-                    <div class="col-4 col-sm">
+                    <div class="col-4">
                         <h3>Trending now</h3>
                         <a href="#" class="textnews_item"><span>Trade-offs can be viewed in terms of goods given for goods received.</span></a>
                         <a href="#"  class="textnews_item">Trade-offs can be viewed in terms of goods given for goods received.</a>
                         <a href="#" class="textnews_item">Trade-offs can be viewed in terms of goods given for goods received.</a>
                     </div>
                     <!--Trending now/My news Tab -->
-                    <div class="col-8 col-sm">
+                    <div class="col-8">
                         <h3>My news</h3>
                         <a href="#" class="textnews_item">Trade-offs can be viewed in terms of goods given for goods received.</a>
                         <a href="#" class="textnews_item">Trade-offs can be viewed in terms of goods given for goods received.</a>
@@ -150,7 +144,7 @@
                     </div>
 
                     <!--Links Tab -->
-                    <div class="col-12 col-sm  u-padding-top-lg">
+                    <div class="col-12  u-padding-top-lg">
                         <div class="links">
                             <div class="links_tab">
                                 <div class="links_tab_btn links_tab_btn-active">My links</div>
@@ -238,7 +232,7 @@
 
 
             <!--Adv Tab -->
-                <div class="col-3 pull-right col-sm">
+                <div class="col-3 pull-right">
                     <a href="#" class="adv_pic"><img src="images/adv/adv_pic_1.jpg" alt="adv_pic_1"></a>
                     <a href="#" class="adv_pic"><img src="images/adv/adv_pic_2.jpg" alt="adv_pic_2"></a>
                     <a href="#" class="adv_pic"><img src="images/adv/adv_pic_3.jpg" alt="adv_pic_3"></a>
