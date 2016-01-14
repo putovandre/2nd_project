@@ -6,12 +6,11 @@
 
 .textnews_item{
     float: left;
-    margin: 0 @padding-base-horizontal @padding-base-horizontal 0;
-    width: 205px;
+    margin: 0 0 @padding-base-horizontal 0;
+    width: 80%;
     height: 50px;
     background-color: @gray-light;
     padding: @padding-mid-horizontal @padding-large-horizontal;
-    max-width: 202px;
     color:@gray-darkest;
     text-transform: uppercase;
     font-family: proxima;
@@ -39,7 +38,8 @@
 
 .adv_pic{
     float: right;
-    margin: 0 @padding-mid-horizontal @padding-mid-horizontal 0;
+    max-width: 100%;
+    margin: 0 0 @padding-mid-horizontal 0;
 }
 
 
@@ -68,16 +68,14 @@
     }
 }
 
-.links_my-links {
-    margin-right: -10px;
 
     .links_my-links_item {
-        margin: @padding-mid-horizontal @padding-mid-horizontal 0 0;
+        margin: @padding-mid-horizontal 0 0 0;
         padding: @padding-large-horizontal 0;
         display: inline-block;
         float: left;
         background-color: @gray-light;
-        width: 170px;
+        width: 100%;
         height: @links_my-links_item-height;
         .l-links_my-links_item_pic {
             width:100%;
@@ -106,4 +104,3 @@
             }
         }
     }
-}
