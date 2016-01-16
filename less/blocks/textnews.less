@@ -2,12 +2,25 @@
 
 
 
+.porn{
+    width: 100%;
+    background-color: red;
+    height:50px;
+    &:hover{
+        background-color: @brand-base;
+        color:@white;}
+}
 
+.textnews_item-short{
+    width: 190px;
+}
+.textnews_item-base{
+    width: 205px;
+}
 
 .textnews_item{
     float: left;
     margin: 0 0 @padding-base-horizontal 0;
-    width: 80%;
     height: 50px;
     background-color: @gray-light;
     padding: @padding-mid-horizontal @padding-large-horizontal;
@@ -19,6 +32,8 @@
     overflow: hidden;
     white-space: nowrap;
 
+    -webkit-transition: all 0.3s ease;
+    -webkit-transition-delay: 0.1s;
 //    display: block; /* Fallback for non-webkit */
 //    display: -webkit-box;
 //    max-width: 180px;
@@ -77,30 +92,24 @@
         background-color: @gray-light;
         width: 100%;
         height: @links_my-links_item-height;
-        .l-links_my-links_item_pic {
-            width:100%;
-            float: left;
-
-            .links_my-links_item_pic {
-                max-height: 50px;
-                display: block;
-                margin: 0 auto;
-            }
+        .l-links_my-links_item_pic {height: 70px; overflow:hidden; text-align:center; line-height:70px;}
+        .l-links_my-links_item_pic img {vertical-align:middle; max-width:100%; max-height: 70px;}
         }
         .l-links_my-links_item_text {
-            margin-top: @links_my-links_item-height - 10;
-            .links_my-links_item_text {
-                width: 30px;
+            overflow: hidden;
+            .links_my-links_item_text{
+                max-width: 40px;
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
                 letter-spacing:-1px;
-                padding: @padding-mid-horizontal 0 0 @padding-large-horizontal;
+                padding: 0 0 0 @padding-large-horizontal;
                 cursor: pointer;
                 &:after{
                     font-family: FontAwesome;
                     content: " \f101";
                 }
+
             }
         }
-    }
+

@@ -1,10 +1,16 @@
-.news_pic, .carousel_pic{
+.carousel_pic,  .news_pic{
     width:100%;
+    overflow: hidden;
+    img{
+        width: 100%;
+    }
 }
-
-//toDO Не понимаю откуда у картинки отступ
+.carousel_pic{
+    height: @carousel_pic-height;
+}
 .news_pic{
-    margin-bottom: -4px;
+    margin-bottom: -3px;
+    height: @news_pic-higth;
 }
 
 
@@ -67,12 +73,6 @@
     }
 }
 
-//toDo: тут по логике надо расчитывать от переменной высота главного баннер минус расстояние между маленькими картинка делить на 2
-//toDo: по скольку главная переменная это именно высота баннера и выстраиваетчя все от нее, заведи ее. обрезай баннер если суют большую картинку, или ужимая картинку
-.news_pic{
-    height: 138px;
-}
-
 
     .news_pic_text {
         cursor: pointer;
@@ -81,6 +81,7 @@
         font-family: sans-serif;
         text-transform: uppercase;
         padding:  @padding-mid-horizontal @padding-mid-horizontal 0 @padding-large-horizontal;
+
 
     }
 .news{
