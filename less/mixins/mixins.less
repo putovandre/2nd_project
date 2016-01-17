@@ -18,3 +18,70 @@
 }
 
 
+.poll_item_bar-mixin(@poll_item_bar-people-1, @poll_item_bar-people-2,@poll_item_bar-people-3){
+
+
+    .poll_itembox_item > div:nth-of-type(1) {
+        .poll_itembox_item_bar {
+            float: right;
+            width: 70%;
+            height: 20px;
+            background-color: @gray-dark;
+            div {
+                width: @poll_item_bar-people-1;
+                height: 100%;
+                background-color: @brand-blue;
+            }
+
+        }
+        &:before{
+            color:@gray-darkest;
+            font: 100 14px sans-serif;
+            vertical-align: bottom;
+            content:"50%";
+        }
+
+    }
+    .poll_itembox_item > div:nth-of-type(2){
+        .poll_itembox_item_bar {
+            float: right;
+            width: 70%;
+            height: 20px;
+            background-color: @gray-dark;
+            div {
+                width: @poll_item_bar-people-2;
+                height: 100%;
+                background-color: @brand-blue;
+            }
+
+        }
+        &:before{
+            color:@gray-darkest;
+            font: 100 14px sans-serif;
+            vertical-align: bottom;
+            content:"15%";
+        }
+    }
+    .poll_itembox_item > div:nth-of-type(3){
+        .poll_itembox_item_bar {
+            float: right;
+            width: 70%;
+            height: 20px;
+            background-color: @gray-dark;
+            div {
+                width: @poll_item_bar-people-3;
+                height: 100%;
+                background-color: @brand-blue;
+            }
+
+        }
+        &:before{
+            color:@gray-darkest;
+            font: 100 14px sans-serif;
+            vertical-align: bottom;
+            content:"35%";
+        }
+    }
+}
+
+

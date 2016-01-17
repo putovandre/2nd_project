@@ -1,0 +1,41 @@
+//footer
+
+.footer{
+    background-color: @brand-base;
+    padding: @padding-large-horizontal @padding-large-horizontal;
+    min-height: 150px;
+    .l-footer_menu{
+        position: relative;
+        float: left;
+        width: (@container-width + @grid-space) - (@padding-large-horizontal)*2 - 150px;
+    }
+    .footer_logo{
+        float:left;
+        height:50px;
+        width: 150px;
+        color: @white;
+    }
+    .footer_menu{
+        width: 100%;
+        padding-bottom: @padding-large-horizontal;
+        border-bottom: 2px solid fade(@white,20%);
+    }
+    .menu_item__footer {
+        a {
+            color: @white;
+            font:200 12px sans-serif;
+            letter-spacing: -1px;
+        }
+        &:before{
+            content: '';
+        }
+
+    }
+    .footer_menu_copyright{
+        position: relative;
+        margin: @padding-large-horizontal 0;
+        color: @white;
+        font:200 10px sans-serif;
+        text-transform: uppercase;
+    }
+}

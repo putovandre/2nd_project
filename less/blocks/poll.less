@@ -1,1 +1,20 @@
 //poll
+.poll{
+
+
+    .poll_text{
+        color: @gray-darkest;
+        font: 100 @font-size-base/25px sans-serif;
+    }
+    .poll_itembox{
+        .poll_item_bar-mixin(50%,15%,35%);
+        margin-top:(@grid-space)/2;
+        h6{
+            margin-top: @grid-space / 2;
+        }
+        .poll_itembox_item > div{
+            margin-top: (@grid-space)/4;
+        }
+    }
+
+}

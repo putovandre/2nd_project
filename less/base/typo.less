@@ -16,7 +16,7 @@ a{
 	}
 }
 
-h1, h2, h3, h4, p, ul, li, table, img{
+h1, h2, h3, h4, h6, p, ul, li, table, img{
 	margin: 0;
 	padding: 0;
 }
@@ -26,13 +26,20 @@ h3{
 
 	color: @brand-base;
 	text-transform: uppercase;
-	font: 600 25px sans-serif;
+	font: @font-style-h3;
 	margin-bottom: @padding-mid-horizontal;
 }
 h4{
 	color: @gray-darkest;
 	text-transform: uppercase;
-	font: 600 25px sans-serif;
+	font: @font-style-h4;
+    letter-spacing: -1px;
+}
+h6{
+    color: @gray-darkest;
+    font: @font-style-h6;
+    letter-spacing: -1px;
+    margiin: 0 0 0 0;
 }
 //tables_lists
 
