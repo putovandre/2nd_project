@@ -8,12 +8,15 @@
     padding: 0 (@grid-space)/2;
 }
 
+// toDo: а что мешает написать на 1 строку короче? width: @container-width - 2*@grid-space; без паддингов? контейнеру прописывают только ширину обычно и маржин авто
 .l-content-container {
     width: @container-width - @grid-space;
     margin:0 auto;
     padding: 0 (@grid-space)/2;
 }
 
+// toDo: по макету видно что оранжевый и синий футер на 100% страпницы
+// toDo: если на странице нету контента - футер должен все равно должен быть прижат к низу - тестить это проще всего с помощью зума cntrl и +/-
 .l-footer-container{
     width: @container-width + @grid-space;
     margin:0 auto;
